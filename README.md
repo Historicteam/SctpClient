@@ -1,7 +1,6 @@
 Примеры использования библиотеки смотрите в тестах исходного кода.
 Для добавления зависимости с помощью Maven надо добавить в pom.xml следующий текcт:
 ```
-<myxml>
 <repositories>
   <repository>
     <id>SctpClient-mvn-repo</id>
@@ -19,6 +18,5 @@
     <version>0.1</version>
   </dependency>
 </dependencies>
-</myxml>
 ```
 Также можете скачать jar файл с mvn-repo.
