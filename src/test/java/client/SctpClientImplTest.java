@@ -132,13 +132,13 @@ public class SctpClientImplTest extends Assert {
     public static class CallBackImpl implements CallBack {
         private SctpResponse response;
 
-        public void success(SctpResponse responce) {
+        public void success(SctpRequest sctpRequest, SctpResponse responce) {
             this.response=responce;
             System.out.println(responce);
             System.out.println("Успешно");
         }
 
-        public void error(SctpResponse responce) {
+        public void error(SctpRequest sctpRequest, SctpResponse responce) {
             this.response=responce;
             System.out.println(responce);
             System.out.println("Ошибка");

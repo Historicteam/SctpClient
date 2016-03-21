@@ -20,18 +20,20 @@ public class SctpClientImpl implements SctpClient {
 
     private String host;
     private int port;
-    private Map<Integer, CallBack> requestMap;
+    private Map<Integer, CallBack> callBackMap;
+    private Map<Integer, SctpRequest> requestMap;
     private InputStream inputStream;
     private OutputStream outputStream;
     private Socket socket;
     private Thread threadReader;
 
 
-    public SctpClientImpl(final String host, final int port) throws IOException{
+    public SctpClientImpl(final String host, final int port) throws IOException {
         this.host = host;
         this.port = port;
         init(host, port);
-        requestMap = new HashMap<Integer, CallBack>();
+        callBackMap = new HashMap<Integer, CallBack>();
+        requestMap = new HashMap<Integer, SctpRequest>();
     }
 
     public SctpClientImpl(final String host) throws IOException {
@@ -39,16 +41,23 @@ public class SctpClientImpl implements SctpClient {
     }
 
     public void execute(SctpRequest stcpRequest, CallBack callBack) throws IOException {
+        if (socket.isClosed()) {
+            init(host, port);
+        }
         if (threadReader == null) {
             threadReader = new Thread(new Reader());
             threadReader.start();
         }
-        requestMap.put(stcpRequest.getId(), callBack);
+
+        callBackMap.put(stcpRequest.getId(), callBack);
         SctpRequestSender sender = new SctpRequestSender(outputStream);
         sender.sendRequest(stcpRequest);
     }
 
     public SctpResponse execute(SctpRequest stcpRequest) throws IOException {
+        if (socket.isClosed()) {
+            init(host, port);
+        }
         SctpRequestSender sender = new SctpRequestSender(outputStream);
         SctpResponseReader reader = new SctpResponseReader(inputStream);
         sender.sendRequest(stcpRequest);
@@ -56,7 +65,7 @@ public class SctpClientImpl implements SctpClient {
     }
 
 
-    private void init(String host, int port) throws  IOException {
+    private void init(String host, int port) throws IOException {
         socket = new Socket(host, port);
         inputStream = socket.getInputStream();
         outputStream = socket.getOutputStream();
@@ -99,16 +108,14 @@ public class SctpClientImpl implements SctpClient {
 
         public void run() {
             SctpResponse sctpResponse = SctpResponceBytesBuilder.build(byteSctpResponse);
-            CallBack callBack = requestMap.get(sctpResponse.getId());
+            CallBack callBack = callBackMap.get(sctpResponse.getId());
             if (sctpResponse.getSctpCodeReturn() == SctpCodeReturn.SUCCESSFUL) {
-                callBack.success(sctpResponse);
+                callBack.success(requestMap.get(sctpResponse.getId()), sctpResponse);
             } else {
-                callBack.error(sctpResponse);
+                callBack.error(requestMap.get(sctpResponse.getId()),sctpResponse);
             }
         }
     }
-
-
 
 
 }
