@@ -15,7 +15,7 @@
   <dependency>
     <groupId>by.ostis.mihas</groupId>
     <artifactId>sctp-client</artifactId>
-    <version>0.1</version>
+    <version>0.1.1</version>
   </dependency>
 </dependencies>
 ```
