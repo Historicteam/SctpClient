@@ -138,7 +138,7 @@ public class SctpClientImplTest extends Assert {
             System.out.println("Успешно");
         }
 
-        public void error(SctpRequest sctpRequest, SctpResponse responce) {
+        public void unsuccess(SctpRequest sctpRequest, SctpResponse responce) {
             this.response=responce;
             System.out.println(responce);
             System.out.println("Ошибка");

@@ -114,7 +114,7 @@ public class SctpClientImpl implements SctpClient {
             if (sctpResponse.getSctpCodeReturn() == SctpCodeReturn.SUCCESSFUL) {
                 callBack.success(requestMap.get(sctpResponse.getId()), sctpResponse);
             } else {
-                callBack.error(requestMap.get(sctpResponse.getId()),sctpResponse);
+                callBack.unsuccess(requestMap.get(sctpResponse.getId()),sctpResponse);
             }
             requestMap.remove(sctpResponse.getId());
         }
