@@ -32,6 +32,7 @@ public class SctpClientImpl implements SctpClient {
         this.host = host;
         this.port = port;
         init(host, port);
+        close();
         callBackMap = new HashMap<Integer, CallBack>();
         requestMap = new HashMap<Integer, SctpRequest>();
     }
@@ -109,11 +110,13 @@ public class SctpClientImpl implements SctpClient {
         public void run() {
             SctpResponse sctpResponse = SctpResponceBytesBuilder.build(byteSctpResponse);
             CallBack callBack = callBackMap.get(sctpResponse.getId());
+            callBackMap.remove(sctpResponse.getId());
             if (sctpResponse.getSctpCodeReturn() == SctpCodeReturn.SUCCESSFUL) {
                 callBack.success(requestMap.get(sctpResponse.getId()), sctpResponse);
             } else {
                 callBack.error(requestMap.get(sctpResponse.getId()),sctpResponse);
             }
+            requestMap.remove(sctpResponse.getId());
         }
     }
 
