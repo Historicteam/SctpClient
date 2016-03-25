@@ -1,11 +1,9 @@
 package client;
 
-
 import model.scparametr.SctpCodeReturn;
 import model.scresponce.SctpResponse;
 import model.scresponce.builder.SctpResponceBytesBuilder;
 import model.stcprequest.SctpRequest;
-import transport.SctpRequestSender;
 import transport.SctpResponseReader;
 
 import java.io.IOException;
@@ -15,8 +13,7 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class SctpClientImpl implements SctpClient {
+public class SctpClientUtil {
 
     private String host;
     private int port;
@@ -25,10 +22,11 @@ public class SctpClientImpl implements SctpClient {
     private InputStream inputStream;
     private OutputStream outputStream;
     private Socket socket;
-    private Thread threadReader;
+    private Thread ReaderThread;
 
 
-    public SctpClientImpl(final String host, final int port) throws IOException {
+
+    public SctpClientUtil(final String host, final int port) throws IOException {
         this.host = host;
         this.port = port;
         init(host, port);
@@ -37,48 +35,40 @@ public class SctpClientImpl implements SctpClient {
         requestMap = new HashMap<Integer, SctpRequest>();
     }
 
-    public SctpClientImpl(final String host) throws IOException {
+    public SctpClientUtil(final String host) throws IOException {
         this(host, 56787);
     }
 
-    public void execute(SctpRequest stcpRequest, CallBack callBack) throws IOException {
+
+    protected void initSocket() throws IOException {
         if (socket.isClosed()) {
-            init(host, port);
-        }
-        if (threadReader == null) {
-            threadReader = new Thread(new Reader());
-            threadReader.start();
-        }
-
-        callBackMap.put(stcpRequest.getId(), callBack);
-        SctpRequestSender sender = new SctpRequestSender(outputStream);
-        sender.sendRequest(stcpRequest);
+              init(host, port);
+          }
     }
 
-    public SctpResponse execute(SctpRequest stcpRequest) throws IOException {
-        if (socket.isClosed()) {
-            init(host, port);
+    protected void initReaderThreat(){
+        if (ReaderThread == null) {
+            ReaderThread = new Thread(new Reader());
+            ReaderThread.start();
         }
-        SctpRequestSender sender = new SctpRequestSender(outputStream);
-        SctpResponseReader reader = new SctpResponseReader(inputStream);
-        sender.sendRequest(stcpRequest);
-        return SctpResponceBytesBuilder.build(reader.read());
     }
 
-
-    private void init(String host, int port) throws IOException {
-        socket = new Socket(host, port);
-        inputStream = socket.getInputStream();
-        outputStream = socket.getOutputStream();
+    protected void addToCallBackMap(int id, CallBack callBack){
+        callBackMap.put(id, callBack);
     }
+
+    protected void addToRequestBackMap(int id, SctpRequest request){
+        requestMap.put(id, request);
+    }
+
 
     public void close() throws IOException {
         closeResources();
     }
 
-    private void closeResources() throws IOException {
-        if (threadReader != null) {
-            threadReader.stop();
+    protected void closeResources() throws IOException {
+        if (ReaderThread != null) {
+            ReaderThread.stop();
         }
         socket.close();
         inputStream.close();
@@ -86,9 +76,16 @@ public class SctpClientImpl implements SctpClient {
 
     }
 
+    private void init(String host, int port) throws IOException {
+            socket = new Socket(host, port);
+            inputStream = socket.getInputStream();
+            outputStream = socket.getOutputStream();
+        }
+
     private class Reader implements Runnable {
         public void run() {
             SctpResponseReader reader = new SctpResponseReader(inputStream);
+            //TODO может быть надо добавить Handler
             while (true) {
                 try {
                     byte[] byteSctpResponse = reader.read();
@@ -120,5 +117,11 @@ public class SctpClientImpl implements SctpClient {
         }
     }
 
+    public InputStream getInputStream() {
+        return inputStream;
+    }
 
+    public OutputStream getOutputStream() {
+        return outputStream;
+    }
 }

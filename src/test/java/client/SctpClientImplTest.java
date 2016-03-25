@@ -17,11 +17,11 @@ import org.junit.Test;
 
 public class SctpClientImplTest extends Assert {
 
-    private SctpClient sctpClient;
+    private ConsSctpClient sctpClient;
 
     @Before
     public void setUp() throws Exception {
-        sctpClient = new SctpClientImpl("192.168.50.154", 55770);
+        sctpClient = new ConsSctpClientImpl("192.168.50.154", 55770);
     }
 
     @After
