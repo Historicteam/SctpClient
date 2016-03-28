@@ -8,7 +8,7 @@ import transport.SctpResponseReader;
 
 import java.io.IOException;
 
-public class ConsSctpClientImpl extends SctpClientUtil implements ConsSctpClient {
+public class ConsSctpClientImpl extends SctpClient implements ConsSctpClient {
     public ConsSctpClientImpl(String host, int port) throws IOException {
         super(host, port);
     }

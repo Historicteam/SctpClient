@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7a4d8a8-2eed-4072-9c9f-0e091692c69a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/client/SctpClientUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SctpClient.iml" afterPath="$PROJECT_DIR$/SctpClient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java" afterPath="$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/AsyncSctpClientImpl.java" afterPath="$PROJECT_DIR$/src/main/java/client/AsyncSctpClientImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/ConsSctpClientImpl.java" afterPath="$PROJECT_DIR$/src/main/java/client/ConsSctpClientImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/client/SctpClientUtil.java" afterPath="$PROJECT_DIR$/src/main/java/client/SctpClient.java" />
     </list>
     <ignored path="SctpClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +43,10 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/client/SctpClientImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SctpClientUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client/SctpClientUtil.java">
+      <file leaf-file-name="SctpClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client/SctpClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,7 +92,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.774194">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
@@ -98,8 +102,8 @@
       <file leaf-file-name="AsyncSctpClientImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClientImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43369177">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.4902507">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -110,9 +114,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,7 +124,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/stcprequest/SetIdentifierSctpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SctpResponseReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/transport/SctpRequestSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client/SctpClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/client/SctpClientImplTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/model/scparametr/SctpCodeReturn.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/stcprequest/CheckElementExistenceSctpRequest.java" />
@@ -222,8 +225,9 @@
         <option value="$PROJECT_DIR$/src/test/java/client/SctpClientImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/SctpClientUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/AsyncSctpClientImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/SctpClient.java" />
       </list>
     </option>
   </component>
@@ -315,7 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,24 +381,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -428,7 +414,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -472,7 +458,7 @@
       <recent name="model.scparametr.scelement.scedge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SctpClientImplTest.testExecute">
+  <component name="RunManager" selected="JUnit.SctpClientImplTest">
     <configuration default="false" name="SctpClientImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -997,8 +983,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SctpClientImplTest.testExecute" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SctpClientImplTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SctpClientImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SctpClientImplTest.testExecute" />
         <item index="2" class="java.lang.String" itemvalue="Application.SctpClientImpl" />
       </list>
     </recent_temporary>
@@ -1034,6 +1020,7 @@
       <workItem from="1458685587359" duration="1987000" />
       <workItem from="1458869076598" duration="1902000" />
       <workItem from="1459033804790" duration="2183000" />
+      <workItem from="1459202832384" duration="259000" />
     </task>
     <task id="LOCAL-00001" summary="First commit. В Принципе все основное реализовано. Осталось дописать несколько запросов и нормальных тестов для примера.">
       <created>1458589291203</created>
@@ -1081,15 +1068,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SctpClientImplTest - 2016.03.21 at 22h 26m 46s.xml">
-      <configuration name="SctpClientImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SctpClientImplTest - 2016.03.21 at 23h 13m 39s.xml">
-      <configuration name="SctpClientImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SctpClientImplTest - 2016.03.21 at 23h 19m 42s.xml">
-      <configuration name="SctpClientImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SctpClientImplTest - 2016.03.22 at 18h 09m 45s.xml">
       <configuration name="SctpClientImplTest" configurationId="JUnit" />
     </history-entry>
@@ -1105,6 +1083,15 @@
     <history-entry file="SctpClientImplTest - 2016.03.23 at 01h 57m 26s.xml">
       <configuration name="SctpClientImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SctpClientImplTest - 2016.03.29 at 01h 08m 07s.xml">
+      <configuration name="SctpClientImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SctpClientImplTest - 2016.03.29 at 01h 09m 29s.xml">
+      <configuration name="SctpClientImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SctpClientImplTest - 2016.03.29 at 01h 09m 46s.xml">
+      <configuration name="SctpClientImplTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="SctpClientImplTest_testExecute - 2016.03.27 at 02h 14m 40s.xml">
       <configuration name="SctpClientImplTest.testExecute" configurationId="JUnit" />
     </history-entry>
@@ -1113,7 +1100,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147752000" />
+    <option name="totallyTimeSpent" value="148011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1032" extended-state="0" />
@@ -1121,12 +1108,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31838566" sideWeight="0.49356914" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3180778" sideWeight="0.49356914" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3782267" sideWeight="0.41103965" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21807359" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32302406" sideWeight="0.9169346" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13974799" sideWeight="0.9169346" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21482684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1499,37 +1486,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/SctpClientImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/SctpClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/ConsSctpClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.774194">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -1539,14 +1506,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/SctpClientImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/SctpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1555,8 +1544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClientImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43369177">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.4902507">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
         </state>
       </provider>

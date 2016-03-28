@@ -13,7 +13,8 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SctpClientUtil {
+//TODO кое какую функциональность надо перенести в AsyncSctpClient
+public class SctpClient {
 
     private String host;
     private int port;
@@ -26,7 +27,7 @@ public class SctpClientUtil {
 
 
 
-    public SctpClientUtil(final String host, final int port) throws IOException {
+    public SctpClient(final String host, final int port) throws IOException {
         this.host = host;
         this.port = port;
         init(host, port);
@@ -35,7 +36,7 @@ public class SctpClientUtil {
         requestMap = new HashMap<Integer, SctpRequest>();
     }
 
-    public SctpClientUtil(final String host) throws IOException {
+    public SctpClient(final String host) throws IOException {
         this(host, 56787);
     }
 
