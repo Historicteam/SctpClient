@@ -1,4 +1,4 @@
-package model.scparametr.scelement;
+package model.scparametr.scelementtype;
 
 public class ScMaterialNodeType extends ScNodeTypeDecarator {
     public ScMaterialNodeType(ScNodeType scNodeType) {

@@ -1,4 +1,4 @@
-package model.scparametr.scelement;
+package model.scparametr.scelementtype;
 
 public class ScAbstractNodeType extends ScNodeTypeDecarator {
     public ScAbstractNodeType(ScNodeType scNodeType) {

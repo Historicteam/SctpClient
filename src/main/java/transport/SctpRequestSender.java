@@ -16,9 +16,13 @@ public class SctpRequestSender {
 
     public void sendRequest(SctpRequest request) throws IOException {
 
-            byte[] data = SctpRequestBytesBuilder.build(request);
-            outputStream.write(data);
-            outputStream.flush();
+        byte[] data = SctpRequestBytesBuilder.build(request);
+        for (byte b : data) {
+            System.out.print(b+".");
+        }
+        System.out.println();
+        outputStream.write(data);
+        outputStream.flush();
 
     }
 }

@@ -1,4 +1,4 @@
-package model.scparametr.scelement;
+package model.scparametr.scelementtype;
 
 
 public class ScLinkType extends ScElementType {

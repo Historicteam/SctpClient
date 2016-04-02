@@ -1,7 +1,7 @@
 package model.scresponce.builder;
 
 import model.scparametr.*;
-import model.scparametr.scelement.ScElementType;
+import model.scparametr.scelementtype.ScElementType;
 import model.scresponce.SctpResponse;
 
 import java.nio.ByteBuffer;

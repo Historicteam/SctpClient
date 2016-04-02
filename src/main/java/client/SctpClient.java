@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //TODO кое какую функциональность надо перенести в AsyncSctpClient
-public class SctpClient {
+abstract public class SctpClient {
 
     private String host;
     private int port;

@@ -6,7 +6,7 @@
 
     <groupId>by.ostis.mihas</groupId>
     <artifactId>sctp-client</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 
     <dependencies>
         <dependency>

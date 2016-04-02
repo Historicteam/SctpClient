@@ -1,8 +1,8 @@
 package model.stcprequest.FindConstructionSctpRequest;
 
 import model.scparametr.ScAddress;
-import model.scparametr.scelement.ScConnectorType;
-import model.scparametr.scelement.ScElementType;
+import model.scparametr.scelementtype.ScConnectorType;
+import model.scparametr.scelementtype.ScElementType;
 
 public class FindConstruction5_a_a_f_a_fSctpRequest extends FindConstructionSctpRequest {
     public FindConstruction5_a_a_f_a_fSctpRequest(ScElementType scFirstElementType, ScConnectorType scFirstConnectorType, ScAddress scAddressThirdElement, ScConnectorType scSecondConnectorType, ScAddress scAddressFifthElement) {

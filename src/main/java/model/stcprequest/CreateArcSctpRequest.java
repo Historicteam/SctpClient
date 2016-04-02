@@ -2,7 +2,7 @@ package model.stcprequest;
 
 
 import model.scparametr.ScAddress;
-import model.scparametr.scelement.ScConnectorType;
+import model.scparametr.scelementtype.ScConnectorType;
 import model.scparametr.SctpCommandType;
 
 public class CreateArcSctpRequest extends SctpRequest {
