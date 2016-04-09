@@ -1,6 +1,7 @@
 package transport;
 
 import model.scresponce.SctpResponse;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,7 +11,7 @@ import java.nio.ByteOrder;
 
 public class SctpResponseReader {
 
-
+    public static final Logger LOG = Logger.getLogger(SctpResponseReader.class);
     private InputStream source;
 
     public SctpResponseReader(InputStream source) {
@@ -31,7 +32,13 @@ public class SctpResponseReader {
         byteBuffer.put(byteReturnCode);
         byteBuffer.put(byteParametrSize);
         byteBuffer.put(parametersBytes);
-        return byteBuffer.array();
+        byte[] data = byteBuffer.array();
+        StringBuilder dataStr = new StringBuilder();
+        for (byte b : data) {
+            dataStr.append(b).append(".");
+        }
+        LOG.info(dataStr);
+        return data;
     }
 
     private byte[] getBytesFromResp(InputStream source, int count) throws IOException {

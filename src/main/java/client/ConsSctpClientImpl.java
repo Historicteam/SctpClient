@@ -24,10 +24,6 @@ public class ConsSctpClientImpl extends SctpClient implements ConsSctpClient {
         SctpResponseReader reader = new SctpResponseReader(getInputStream());
         sender.sendRequest(stcpRequest);
         byte[] data = reader.read();
-        for (byte b : data) {
-            System.out.print(b+".");
-        }
-        System.out.println();
         return SctpResponceBytesBuilder.build(data);
     }
 
@@ -35,4 +31,6 @@ public class ConsSctpClientImpl extends SctpClient implements ConsSctpClient {
     public void close() throws IOException {
         closeResources();
     }
+
+
 }
