@@ -3,8 +3,8 @@
 ```
 <repositories>
   <repository>
-    <id>SctpClient-mvn-repo</id>
-    <url>https://raw.github.com//Historicteam/SctpClient/mvn-repo/</url>
+    <id>tasks.SctpClient-mvn-repo</id>
+    <url>https://raw.github.com//Historicteam/tasks.SctpClient/mvn-repo/</url>
     <snapshots>
       <enabled>true</enabled>
       <updatePolicy>always</updatePolicy>

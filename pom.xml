@@ -6,7 +6,7 @@
 
     <groupId>by.ostis.mihas</groupId>
     <artifactId>sctp-client</artifactId>
-    <version>0.1.3</version>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
@@ -73,7 +73,7 @@
                     <includes>
                         <include>**/*</include>
                     </includes>
-                    <repositoryName>SctpClient</repositoryName>
+                    <repositoryName>tasks.SctpClient</repositoryName>
                     <repositoryOwner>Historicteam</repositoryOwner>
                 </configuration>
                 <executions>

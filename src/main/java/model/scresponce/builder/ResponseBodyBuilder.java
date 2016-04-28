@@ -73,6 +73,8 @@ final class ResponseBodyBuilder {
                 return new FindLinksBuilder().build(byteBuffer);
             case SET_LINK_CONTENT_COMMAND:
                 return Collections.EMPTY_LIST;
+            case FIND_CONSTRUCTIONS_COMMAND:
+                return new FindConstructionResponseBuilder().build(byteBuffer);
             case MAKE_SUBSCRIPTION_COMMAND:
                 return new MakeSubscriptionBuilder().build(byteBuffer);
             case DELETE_SUBSCRIPTION_COMMAND:
@@ -81,8 +83,6 @@ final class ResponseBodyBuilder {
                 return new CreateNodeBuilder().build(byteBuffer);
             case SET_SYSIDTF_COMMAND:
                 return Collections.EMPTY_LIST;
-            case FIND_CONSTRUCTIONS_COMMAND:
-                return new FindConstructionResponseBuilder().build(byteBuffer);
             case STATISTICS_COMMAND:
                 return Collections.EMPTY_LIST;
             case VERSION_COMMAND:
@@ -96,14 +96,6 @@ final class ResponseBodyBuilder {
             case ITERATE_CONSTRUCTION_COMMAND:
                 return Collections.EMPTY_LIST;
             default:
-                // TODO: 0x02 Ask ElementTypes and add to ScElementType enum
-                // TODO: 0x08 - undefined on sc-machine wiki
-                // TODO: 0x0e - Event subscription
-                // TODO: 0x0f - Delete event subscription
-                // TODO: 0x0d - Complex construction iteration
-                // TODO: 0x10 - Passed event inquiry
-                // TODO:0xa2 - Server statistics in time interval
-                // TODO:0xa3 - Ask protocol version(ask encoding)
                 throw new IllegalArgumentException("Not support command= " + sctpResponse.getSctpCommandType());
         }
 

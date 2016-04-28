@@ -16,12 +16,10 @@ abstract public class SctpRequest {
     public static final int FLAG_SIZE = 1;
     public static final int ID_SIZE = 4;
     public static final int PARAMETRS_SIZE_SIZE = 4;
-    private static int ID_GENERATE = Integer.MIN_VALUE;
     private List<ScParameter> parameters;
 
     public SctpRequest() {
         setFlag((byte)0);
-        setId(ID_GENERATE++);
         parameters = new ArrayList<>();
     }
 
@@ -45,7 +43,7 @@ abstract public class SctpRequest {
         return id;
     }
 
-    protected void setId(int id) {
+   public void setId(int id) {
         this.id = id;
     }
 
@@ -53,7 +51,7 @@ abstract public class SctpRequest {
         return size;
     }
 
-    protected void setSize(int size) {
+    public void setSize(int size) {
         this.size = size;
     }
 

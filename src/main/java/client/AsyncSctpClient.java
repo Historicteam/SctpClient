@@ -7,7 +7,6 @@ import java.io.IOException;
 
 interface AsyncSctpClient {
     void execute(SctpRequest stcpRequest, CallBack callBack) throws IOException;
-
-
-    void close() throws IOException;
+    FutureImpl execute(SctpRequest stcpRequest) throws IOException;
+    void close() throws IOException, InterruptedException;
 }

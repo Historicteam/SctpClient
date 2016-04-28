@@ -8,7 +8,7 @@ import transport.SctpResponseReader;
 
 import java.io.IOException;
 
-public class ConsSctpClientImpl extends SctpClient implements ConsSctpClient {
+public class ConsSctpClientImpl extends SctpClientHelper implements ConsSctpClient {
     public ConsSctpClientImpl(String host, int port) throws IOException {
         super(host, port);
     }
@@ -18,19 +18,13 @@ public class ConsSctpClientImpl extends SctpClient implements ConsSctpClient {
     }
 
     @Override
-    public SctpResponse execute(SctpRequest stcpRequest) throws IOException {
-        initSocket();
+    public SctpResponse perform(SctpRequest stcpRequest) throws IOException {
+        init();
+        generateIdRequest(stcpRequest);
         SctpRequestSender sender = new SctpRequestSender(getOutputStream());
         SctpResponseReader reader = new SctpResponseReader(getInputStream());
         sender.sendRequest(stcpRequest);
         byte[] data = reader.read();
         return SctpResponceBytesBuilder.build(data);
     }
-
-    @Override
-    public void close() throws IOException {
-        closeResources();
-    }
-
-
 }
