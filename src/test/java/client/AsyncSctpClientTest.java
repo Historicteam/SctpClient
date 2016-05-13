@@ -85,7 +85,6 @@ public class AsyncSctpClientTest extends Assert {
         LOG.info(sctpResponseDeleteSubscription.get());
         LOG.info(client);
         LOG.info("--------------Finish test testPerform-------------");
-
     }
 
     public Future<SctpResponse> testCreateElement(ScNodeType scNodeType) throws IOException {

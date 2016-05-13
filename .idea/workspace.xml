@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7a4d8a8-2eed-4072-9c9f-0e091692c69a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SctpClient.iml" afterPath="$PROJECT_DIR$/SctpClient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScAbstractNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScAbstractNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScClassNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScClassNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConstConnectorType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConstConnectorType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConstNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConstNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScFuzArcAccessType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScFuzArcAccessType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScMaterialNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScMaterialNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScNegArcAccessType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScNegArcAccessType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScNoroleNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScNoroleNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPermArcAccessType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPermArcAccessType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPosArcAccessType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPosArcAccessType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScRoleNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScRoleNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScStructNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScStructNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTempArcAccessType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTempArcAccessType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTupleNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTupleNodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarConnectorType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarConnectorType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarNodeType.java" afterPath="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarNodeType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java" />
     </list>
     <ignored path="SctpClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,52 +34,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ScStructNodeType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScStructNodeType.java">
+      <file leaf-file-name="ScPermArcAccessType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPermArcAccessType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScTempArcAccessType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTempArcAccessType.java">
+      <file leaf-file-name="AsyncSctpClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScTupleNodeType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTupleNodeType.java">
+      <file leaf-file-name="ScConnectorType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConnectorType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScVarConnectorType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarConnectorType.java">
+      <file leaf-file-name="d.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/d.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes />
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScParameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScParameter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScVarNodeType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarNodeType.java">
+      <file leaf-file-name="GetArcVertexesSctpRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/GetArcVertexesSctpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/d.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes />
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -107,8 +125,8 @@
       <file leaf-file-name="ScElementTypeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1475">
-              <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+            <state relative-caret-position="141">
+              <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,67 +134,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScAddress.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScAddress.java">
+      <file leaf-file-name="ConstSctpClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/client/ConstSctpClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="1003">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.uml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model.uml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/model.uml">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
               <ID>JAVA</ID>
               <OriginalElement />
               <nodes>
-                <node x="473.0000000000001" y="360.0">model.scparametr.scelementtype.ScAbstractNodeType</node>
-                <node x="1786.5" y="100.0">model.scparametr.ScEventType</node>
-                <node x="1711.5" y="260.0">model.scparametr.scelementtype.ScConnectorTypeDecarator</node>
-                <node x="1396.5" y="260.0">model.scparametr.scelementtype.ScArcAccessType</node>
-                <node x="2047.5" y="100.0">model.scparametr.ScAddress</node>
-                <node x="1233.0" y="360.0">model.scparametr.scelementtype.ScVarNodeType</node>
-                <node x="626.0000000000001" y="260.0">model.scparametr.scelementtype.ScNodeTypeDecarator</node>
-                <node x="1554.5" y="100.0">model.scparametr.ScString</node>
-                <node x="1651.5" y="100.0">model.scparametr.scelementtype.ScElementType</node>
-                <node x="1551.5" y="440.0">model.scparametr.scelementtype.ScNegArcAccessType</node>
-                <node x="1907.5" y="100.0">model.scparametr.SctpCodeReturn</node>
-                <node x="1807.5" y="360.0">model.scparametr.scelementtype.ScConstConnectorType</node>
-                <node x="1723.0" y="0.0">model.scparametr.ScParameter</node>
-                <node x="1910.5" y="260.0">model.scparametr.scelementtype.ScArcCommonType</node>
-                <node x="2155.5" y="100.0">model.scparametr.ScContentSize</node>
-                <node x="1642.5" y="360.0">model.scparametr.scelementtype.ScVarConnectorType</node>
-                <node x="1719.5" y="440.0">model.scparametr.scelementtype.ScPermArcAccessType</node>
-                <node x="638.0000000000001" y="360.0">model.scparametr.scelementtype.ScClassNodeType</node>
-                <node x="937.0000000000001" y="360.0">model.scparametr.scelementtype.ScStructNodeType</node>
-                <node x="1882.2075163398695" y="180.0">model.scparametr.scelementtype.ScLinkType</node>
-                <node x="1387.5" y="440.0">model.scparametr.scelementtype.ScFuzArcAccessType</node>
-                <node x="164.0" y="360.0">model.scparametr.scelementtype.ScConstNodeType</node>
-                <node x="0.0" y="360.0">model.scparametr.scelementtype.ScMaterialNodeType</node>
-                <node x="1252.5" y="100.0">model.scparametr.ScIdSubscription</node>
-                <node x="316.0000000000002" y="360.0">model.scparametr.scelementtype.ScNoroleNodeType</node>
-                <node x="1089.0" y="360.0">model.scparametr.scelementtype.ScRoleNodeType</node>
-                <node x="1222.5" y="440.0">model.scparametr.scelementtype.ScPosArcAccessType</node>
-                <node x="1045.5" y="440.0">model.scparametr.scelementtype.ScTempArcAccessType</node>
-                <node x="1394.5" y="100.0">model.scparametr.SctpCommandType</node>
-                <node x="786.0000000000001" y="360.0">model.scparametr.scelementtype.ScTupleNodeType</node>
-                <node x="1542.5" y="260.0">model.scparametr.scelementtype.ScEdgeCommonType</node>
-                <node x="651.5000000000001" y="180.0">model.scparametr.scelementtype.ScNodeType</node>
-                <node x="1371.0" y="360.0">model.scparametr.scelementtype.ScArcAccessTypeDecarator</node>
-                <node x="1734.2075163398695" y="180.0">model.scparametr.scelementtype.ScConnectorType</node>
+                <node x="378.0" y="76.0">model.scparametr.scelementtype.ScAbstractNodeType</node>
+                <node x="1703.5" y="160.0">model.scparametr.scelementtype.ScConnectorTypeDecarator</node>
+                <node x="1396.5" y="160.0">model.scparametr.scelementtype.ScArcAccessType</node>
+                <node x="937.0000000000001" y="260.0">model.scparametr.scelementtype.ScVarNodeType</node>
+                <node x="611.0000000000001" y="160.0">model.scparametr.scelementtype.ScNodeTypeDecarator</node>
+                <node x="1552.0" y="340.0">model.scparametr.scelementtype.ScNegArcAccessType</node>
+                <node x="1503.5" y="215.0">model.scparametr.scelementtype.ScConstConnectorType</node>
+                <node x="1167.75" y="0.0">model.scparametr.scelementtype.ScElementType</node>
+                <node x="1542.5" y="160.0">model.scparametr.scelementtype.ScArcCommonType</node>
+                <node x="1705.5" y="262.0">model.scparametr.scelementtype.ScVarConnectorType</node>
+                <node x="1720.0" y="340.0">model.scparametr.scelementtype.ScPermArcAccessType</node>
+                <node x="621.0000000000001" y="260.0">model.scparametr.scelementtype.ScStructNodeType</node>
+                <node x="392.0000000000001" y="327.0">model.scparametr.scelementtype.ScClassNodeType</node>
+                <node x="1178.25" y="80.0">model.scparametr.scelementtype.ScLinkType</node>
+                <node x="1223.0" y="340.0">model.scparametr.scelementtype.ScFuzArcAccessType</node>
+                <node x="1219.0" y="260.0">model.scparametr.scelementtype.ScConstNodeType</node>
+                <node x="773.0000000000001" y="260.0">model.scparametr.scelementtype.ScMaterialNodeType</node>
+                <node x="478.0" y="36.0">model.scparametr.scelementtype.ScNoroleNodeType</node>
+                <node x="1075.0" y="260.0">model.scparametr.scelementtype.ScRoleNodeType</node>
+                <node x="1387.0" y="340.0">model.scparametr.scelementtype.ScPosArcAccessType</node>
+                <node x="1046.0" y="340.0">model.scparametr.scelementtype.ScTempArcAccessType</node>
+                <node x="470.0000000000001" y="260.0">model.scparametr.scelementtype.ScTupleNodeType</node>
+                <node x="636.5000000000001" y="80.0">model.scparametr.scelementtype.ScNodeType</node>
+                <node x="1752.5" y="423.0">model.scparametr.scelementtype.ScEdgeCommonType</node>
+                <node x="1371.0" y="260.0">model.scparametr.scelementtype.ScArcAccessTypeDecarator</node>
+                <node x="1639.0" y="80.0">model.scparametr.scelementtype.ScConnectorType</node>
               </nodes>
               <notes />
               <edges>
@@ -186,208 +188,146 @@
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScVarConnectorType" target="model.scparametr.scelementtype.ScConnectorTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1715.0" y="340.0" />
-                  <point x="1756.25" y="340.0" />
-                  <point x="-44.75" y="15.0" />
+                  <point x="1809.0" y="240.0" />
+                  <point x="1837.75" y="240.0" />
+                  <point x="44.75" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScArcCommonType" target="model.scparametr.scelementtype.ScConnectorType">
                   <point x="0.0" y="-15.0" />
-                  <point x="1981.0" y="240.0" />
-                  <point x="1846.2075163398695" y="240.0" />
-                  <point x="48.0" y="15.0" />
+                  <point x="1613.0" y="140.0" />
+                  <point x="1687.0" y="140.0" />
+                  <point x="-16.0" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScVarNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1292.0" y="310.0" />
-                  <point x="769.5555555555557" y="310.0" />
-                  <point x="67.55555555555554" y="15.0" />
+                  <point x="996.0000000000001" y="230.0" />
+                  <point x="720.7777777777778" y="230.0" />
+                  <point x="33.77777777777776" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScNoroleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="384.5000000000002" y="330.0" />
-                  <point x="668.2222222222223" y="330.0" />
-                  <point x="-33.777777777777786" y="15.0" />
+                  <point x="546.5" y="210.0" />
+                  <point x="619.4444444444446" y="210.0" />
+                  <point x="-67.55555555555556" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScPosArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1295.0" y="420.0" />
-                  <point x="1424.1000000000001" y="420.0" />
-                  <point x="-35.39999999999999" y="15.0" />
+                  <point x="1.4210854715202004E-14" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScFuzArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1.4210854715202004E-14" y="15.0" />
+                  <point x="1295.0" y="320.0" />
+                  <point x="1424.1000000000001" y="320.0" />
+                  <point x="-35.39999999999999" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScNodeType" target="model.scparametr.scelementtype.ScElementType">
                   <point x="0.0" y="-15.0" />
-                  <point x="702.0000000000001" y="160.0" />
-                  <point x="1670.6666666666667" y="160.0" />
+                  <point x="687.0000000000001" y="55.0" />
+                  <point x="1186.9166666666667" y="55.0" />
                   <point x="-38.333333333333336" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScConstNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="230.0" y="320.0" />
-                  <point x="651.3333333333335" y="320.0" />
-                  <point x="-50.66666666666667" y="15.0" />
+                  <point x="1285.0" y="210.0" />
+                  <point x="754.5555555555557" y="210.0" />
+                  <point x="67.55555555555554" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScTempArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1124.0" y="410.0" />
-                  <point x="1388.7" y="410.0" />
+                  <point x="1124.5" y="310.0" />
+                  <point x="1388.7" y="310.0" />
                   <point x="-70.8" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScMaterialNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="72.0" y="310.0" />
-                  <point x="634.4444444444446" y="310.0" />
-                  <point x="-67.55555555555556" y="15.0" />
+                  <point x="845.0000000000001" y="240.0" />
+                  <point x="703.8888888888889" y="240.0" />
+                  <point x="16.88888888888887" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScNegArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1625.5" y="420.0" />
-                  <point x="1494.9" y="420.0" />
+                  <point x="1626.0" y="320.0" />
+                  <point x="1494.9" y="320.0" />
                   <point x="35.40000000000002" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.ScAddress" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="2091.5" y="60.0" />
-                  <point x="1804.25" y="60.0" />
-                  <point x="31.25" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScConstConnectorType" target="model.scparametr.scelementtype.ScConnectorTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1887.0" y="340.0" />
-                  <point x="1845.75" y="340.0" />
-                  <point x="44.75" y="15.0" />
+                  <point x="1707.0" y="240.0" />
+                  <point x="1748.25" y="240.0" />
+                  <point x="-44.75" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScEdgeCommonType" target="model.scparametr.scelementtype.ScConnectorType">
                   <point x="0.0" y="-15.0" />
-                  <point x="1617.0" y="240.0" />
-                  <point x="1782.2075163398695" y="240.0" />
-                  <point x="-16.0" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.ScIdSubscription" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1313.5" y="50.0" />
-                  <point x="1729.25" y="50.0" />
-                  <point x="-43.75" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.SctpCodeReturn" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1967.5" y="70.0" />
-                  <point x="1791.75" y="70.0" />
-                  <point x="18.75" y="15.0" />
+                  <point x="1819.0" y="126.0" />
+                  <point x="1751.0" y="130.0" />
+                  <point x="48.0" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScStructNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1003.0000000000001" y="330.0" />
-                  <point x="735.7777777777778" y="330.0" />
-                  <point x="33.77777777777776" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.scelementtype.ScElementType" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1709.0" y="80.0" />
-                  <point x="1766.75" y="80.0" />
-                  <point x="-6.25" y="15.0" />
+                  <point x="-1.4210854715202004E-14" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScTupleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="851.5000000000001" y="340.0" />
-                  <point x="718.888888888889" y="340.0" />
-                  <point x="16.88888888888887" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.ScContentSize" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="2210.0" y="50.0" />
-                  <point x="1816.75" y="50.0" />
-                  <point x="43.75" y="15.0" />
+                  <point x="535.5000000000001" y="240.0" />
+                  <point x="670.1111111111112" y="240.0" />
+                  <point x="-16.8888888888889" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScPermArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1796.5" y="410.0" />
-                  <point x="1530.3000000000002" y="410.0" />
+                  <point x="1797.0" y="310.0" />
+                  <point x="1530.3000000000002" y="310.0" />
                   <point x="70.80000000000001" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.scelementtype.ScAbstractNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
-                  <point x="0.0" y="-15.0" />
-                  <point x="545.5000000000001" y="340.0" />
-                  <point x="685.1111111111112" y="340.0" />
-                  <point x="-16.8888888888889" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.scelementtype.ScClassNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
-                  <point x="0.0" y="-15.0" />
-                  <point x="-1.4210854715202004E-14" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScConnectorType" target="model.scparametr.scelementtype.ScElementType">
                   <point x="0.0" y="-15.0" />
-                  <point x="1798.2075163398695" y="160.0" />
-                  <point x="1709.0" y="160.0" />
-                  <point x="7.105427357601002E-15" y="15.0" />
+                  <point x="1703.0" y="55.0" />
+                  <point x="1263.5833333333335" y="55.0" />
+                  <point x="38.33333333333334" y="15.0" />
+                </edge>
+                <edge source="model.scparametr.scelementtype.ScClassNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
+                  <point x="0.0" y="-15.0" />
+                  <point x="456.0000000000001" y="233.0" />
+                  <point x="653.2222222222223" y="230.0" />
+                  <point x="-33.777777777777786" y="15.0" />
+                </edge>
+                <edge source="model.scparametr.scelementtype.ScAbstractNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
+                  <point x="0.0" y="-15.0" />
+                  <point x="450.5" y="220.0" />
+                  <point x="636.3333333333335" y="220.0" />
+                  <point x="-50.66666666666667" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScArcAccessType" target="model.scparametr.scelementtype.ScConnectorType">
                   <point x="0.0" y="-15.0" />
-                  <point x="1459.5" y="230.0" />
-                  <point x="1750.2075163398695" y="230.0" />
+                  <point x="1459.5" y="130.0" />
+                  <point x="1655.0" y="130.0" />
                   <point x="-48.0" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.ScEventType" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1837.0" y="80.0" />
-                  <point x="1779.25" y="80.0" />
-                  <point x="6.25" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScRoleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
                   <point x="0.0" y="-15.0" />
-                  <point x="1151.0" y="320.0" />
-                  <point x="752.6666666666667" y="320.0" />
+                  <point x="1137.0" y="220.0" />
+                  <point x="737.6666666666667" y="220.0" />
                   <point x="50.66666666666664" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.SctpCommandType" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1464.5" y="60.0" />
-                  <point x="1741.75" y="60.0" />
-                  <point x="-31.25" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScConnectorTypeDecarator" target="model.scparametr.scelementtype.ScConnectorType">
                   <point x="0.0" y="-15.0" />
-                  <point x="1801.0" y="240.0" />
-                  <point x="1814.2075163398695" y="240.0" />
+                  <point x="1793.0" y="140.0" />
+                  <point x="1719.0" y="140.0" />
                   <point x="16.0" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.ScString" target="model.scparametr.ScParameter">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1593.0" y="70.0" />
-                  <point x="1754.25" y="70.0" />
-                  <point x="-18.75" y="15.0" />
-                </edge>
-                <edge source="model.scparametr.scelementtype.ScLinkType" target="model.scparametr.scelementtype.ScElementType">
-                  <point x="0.0" y="-15.0" />
-                  <point x="1929.2075163398695" y="150.0" />
-                  <point x="1747.3333333333335" y="150.0" />
-                  <point x="38.33333333333334" y="15.0" />
                 </edge>
                 <edge source="model.scparametr.scelementtype.ScNodeTypeDecarator" target="model.scparametr.scelementtype.ScNodeType">
                   <point x="0.0" y="-15.0" />
                   <point x="0.0" y="15.0" />
                 </edge>
+                <edge source="model.scparametr.scelementtype.ScLinkType" target="model.scparametr.scelementtype.ScElementType">
+                  <point x="0.0" y="-15.0" />
+                  <point x="7.105427357601002E-15" y="15.0" />
+                </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="925.0" y="245.0" />
-              <SelectedNodes>
-                <node>model.scparametr.scelementtype.ScConnectorType</node>
-              </SelectedNodes>
+              <settings layout="Hierarchic Group" zoom="1.0" x="1574.5" y="-117.5" />
+              <SelectedNodes />
               <Categories />
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScElementType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScElementType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -449,7 +389,6 @@
         <option value="$PROJECT_DIR$/src/test/java/client/ConstSctpClientImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/Future.java" />
         <option value="$PROJECT_DIR$/src/main/java/client/FutureImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/client/ConstSctpClientTest.java" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class" />
         <option value="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScAbstractNodeType.java" />
@@ -468,8 +407,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScTupleNodeType.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarConnectorType.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScVarNodeType.java" />
-        <option value="$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java" />
       </list>
     </option>
   </component>
@@ -563,7 +503,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -582,82 +522,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SctpClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../opencvtest2" />
+    <property name="last_opened_file_path" value="E:/Dropbox/БГУиР/3 курс 2 половина/курсач/Диаграммы" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -1383,7 +1257,8 @@
       <workItem from="1461729611645" duration="809000" />
       <workItem from="1461739796617" duration="22922000" />
       <workItem from="1462988766137" duration="5617000" />
-      <workItem from="1463082164113" duration="5561000" />
+      <workItem from="1463082164113" duration="13625000" />
+      <workItem from="1463113037676" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="First commit. В Принципе все основное реализовано. Осталось дописать несколько запросов и нормальных тестов для примера.">
       <created>1458589291203</created>
@@ -1455,7 +1330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460240475128</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Была ошибка при создание типа елемента, и я ее исправил.">
+      <created>1463100045735</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1463100045735</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1491,7 +1373,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256137000" />
+    <option name="totallyTimeSpent" value="267355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1504,32 +1386,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31060606" sideWeight="0.49356914" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3782267" sideWeight="0.41103965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0755627" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45670995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961039" sideWeight="0.9169346" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07027027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24675325" sideWeight="0.58896035" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24675325" sideWeight="0.58896035" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31060606" sideWeight="0.49356914" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961039" sideWeight="0.9169346" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.048260383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1582,7 +1464,8 @@
     <MESSAGE value="Сделал два вида Sctp клиентов. Для асинхронных и последовательных запросов." />
     <MESSAGE value="Переписал тесты, но без полного покрытия. Выявилась проблема с запросами на стороне sc-machine. некоректно работают запросы удаления элемента и задания системного идентификатора. Так же на некоторых версиях sc-машины не возврощает адресс при поиске sc-connector." />
     <MESSAGE value="Добавил логирование" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил логирование" />
+    <MESSAGE value="Была ошибка при создание типа елемента, и я ее исправил." />
+    <option name="LAST_COMMIT_MESSAGE" value="Была ошибка при создание типа елемента, и я ее исправил." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1609,85 +1492,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/CallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scresponce/SctpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scresponce/builder/ResponseBodyBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/SctpCommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/DeleteSubscriptionSctpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/CreateConstructionSctpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/ConstructionIterationSctpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/builders/AnnotatedBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/ClassRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/FutureImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1699,44 +1503,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/concurrent/Future.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/client/ConsSctpClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/ConstSctpClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.uml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScEventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -1755,6 +1527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1796,14 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConnectorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1850,6 +1615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1877,14 +1643,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScNoroleNodeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPermArcAccessType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1956,46 +1714,249 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/AsyncSctpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/ConsSctpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/SctpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/d.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="64.25" y="6.5">client.ConsSctpClient</node>
+            <node x="351.25" y="146.0">client.AsyncSctpClientImpl</node>
+            <node x="382.25" y="0.0">client.AsyncSctpClient</node>
+            <node x="341.75" y="392.0">client.AdvancedSctpClient</node>
+            <node x="0.0" y="381.0">client.ConsSctpClientImpl</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="client.AdvancedSctpClient" target="client.AsyncSctpClientImpl">
+              <point x="61.0" y="-37.5" />
+              <point x="0.0" y="92.5" />
+            </edge>
+            <edge source="client.ConsSctpClientImpl" target="client.ConsSctpClient">
+              <point x="0.0" y="-48.5" />
+              <point x="-66.75" y="37.0" />
+            </edge>
+            <edge source="client.AdvancedSctpClient" target="client.ConsSctpClient">
+              <point x="-61.0" y="-37.5" />
+              <point x="402.75" y="356.0" />
+              <point x="264.5" y="356.0" />
+              <point x="66.75" y="37.0" />
+            </edge>
+            <edge source="client.AsyncSctpClientImpl" target="client.AsyncSctpClient">
+              <point x="2.8421709430404007E-14" y="-92.5" />
+              <point x="0.0" y="48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8" x="-120.0" y="307.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/AdvancedSctpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/ConsSctpClientImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client/SctpClientHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/CheckElementExistenceSctpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScEventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScPermArcAccessType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/GetArcVertexesSctpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/ConstSctpClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/AsyncSctpClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/ScConnectorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/stcprequest/d.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/d.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/scelementtype/model.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="473.0000000000001" y="360.0">model.scparametr.scelementtype.ScAbstractNodeType</node>
-            <node x="1786.5" y="100.0">model.scparametr.ScEventType</node>
-            <node x="1711.5" y="260.0">model.scparametr.scelementtype.ScConnectorTypeDecarator</node>
-            <node x="1396.5" y="260.0">model.scparametr.scelementtype.ScArcAccessType</node>
-            <node x="2047.5" y="100.0">model.scparametr.ScAddress</node>
-            <node x="1233.0" y="360.0">model.scparametr.scelementtype.ScVarNodeType</node>
-            <node x="626.0000000000001" y="260.0">model.scparametr.scelementtype.ScNodeTypeDecarator</node>
-            <node x="1554.5" y="100.0">model.scparametr.ScString</node>
-            <node x="1651.5" y="100.0">model.scparametr.scelementtype.ScElementType</node>
-            <node x="1551.5" y="440.0">model.scparametr.scelementtype.ScNegArcAccessType</node>
-            <node x="1907.5" y="100.0">model.scparametr.SctpCodeReturn</node>
-            <node x="1807.5" y="360.0">model.scparametr.scelementtype.ScConstConnectorType</node>
-            <node x="1723.0" y="0.0">model.scparametr.ScParameter</node>
-            <node x="1910.5" y="260.0">model.scparametr.scelementtype.ScArcCommonType</node>
-            <node x="2155.5" y="100.0">model.scparametr.ScContentSize</node>
-            <node x="1642.5" y="360.0">model.scparametr.scelementtype.ScVarConnectorType</node>
-            <node x="1719.5" y="440.0">model.scparametr.scelementtype.ScPermArcAccessType</node>
-            <node x="638.0000000000001" y="360.0">model.scparametr.scelementtype.ScClassNodeType</node>
-            <node x="937.0000000000001" y="360.0">model.scparametr.scelementtype.ScStructNodeType</node>
-            <node x="1882.2075163398695" y="180.0">model.scparametr.scelementtype.ScLinkType</node>
-            <node x="1387.5" y="440.0">model.scparametr.scelementtype.ScFuzArcAccessType</node>
-            <node x="164.0" y="360.0">model.scparametr.scelementtype.ScConstNodeType</node>
-            <node x="0.0" y="360.0">model.scparametr.scelementtype.ScMaterialNodeType</node>
-            <node x="1252.5" y="100.0">model.scparametr.ScIdSubscription</node>
-            <node x="316.0000000000002" y="360.0">model.scparametr.scelementtype.ScNoroleNodeType</node>
-            <node x="1089.0" y="360.0">model.scparametr.scelementtype.ScRoleNodeType</node>
-            <node x="1222.5" y="440.0">model.scparametr.scelementtype.ScPosArcAccessType</node>
-            <node x="1045.5" y="440.0">model.scparametr.scelementtype.ScTempArcAccessType</node>
-            <node x="1394.5" y="100.0">model.scparametr.SctpCommandType</node>
-            <node x="786.0000000000001" y="360.0">model.scparametr.scelementtype.ScTupleNodeType</node>
-            <node x="1542.5" y="260.0">model.scparametr.scelementtype.ScEdgeCommonType</node>
-            <node x="651.5000000000001" y="180.0">model.scparametr.scelementtype.ScNodeType</node>
-            <node x="1371.0" y="360.0">model.scparametr.scelementtype.ScArcAccessTypeDecarator</node>
-            <node x="1734.2075163398695" y="180.0">model.scparametr.scelementtype.ScConnectorType</node>
+            <node x="378.0" y="76.0">model.scparametr.scelementtype.ScAbstractNodeType</node>
+            <node x="1703.5" y="160.0">model.scparametr.scelementtype.ScConnectorTypeDecarator</node>
+            <node x="1396.5" y="160.0">model.scparametr.scelementtype.ScArcAccessType</node>
+            <node x="937.0000000000001" y="260.0">model.scparametr.scelementtype.ScVarNodeType</node>
+            <node x="611.0000000000001" y="160.0">model.scparametr.scelementtype.ScNodeTypeDecarator</node>
+            <node x="1552.0" y="340.0">model.scparametr.scelementtype.ScNegArcAccessType</node>
+            <node x="1503.5" y="215.0">model.scparametr.scelementtype.ScConstConnectorType</node>
+            <node x="1167.75" y="0.0">model.scparametr.scelementtype.ScElementType</node>
+            <node x="1542.5" y="160.0">model.scparametr.scelementtype.ScArcCommonType</node>
+            <node x="1705.5" y="262.0">model.scparametr.scelementtype.ScVarConnectorType</node>
+            <node x="1720.0" y="340.0">model.scparametr.scelementtype.ScPermArcAccessType</node>
+            <node x="621.0000000000001" y="260.0">model.scparametr.scelementtype.ScStructNodeType</node>
+            <node x="392.0000000000001" y="327.0">model.scparametr.scelementtype.ScClassNodeType</node>
+            <node x="1178.25" y="80.0">model.scparametr.scelementtype.ScLinkType</node>
+            <node x="1223.0" y="340.0">model.scparametr.scelementtype.ScFuzArcAccessType</node>
+            <node x="1219.0" y="260.0">model.scparametr.scelementtype.ScConstNodeType</node>
+            <node x="773.0000000000001" y="260.0">model.scparametr.scelementtype.ScMaterialNodeType</node>
+            <node x="478.0" y="36.0">model.scparametr.scelementtype.ScNoroleNodeType</node>
+            <node x="1075.0" y="260.0">model.scparametr.scelementtype.ScRoleNodeType</node>
+            <node x="1387.0" y="340.0">model.scparametr.scelementtype.ScPosArcAccessType</node>
+            <node x="1046.0" y="340.0">model.scparametr.scelementtype.ScTempArcAccessType</node>
+            <node x="470.0000000000001" y="260.0">model.scparametr.scelementtype.ScTupleNodeType</node>
+            <node x="636.5000000000001" y="80.0">model.scparametr.scelementtype.ScNodeType</node>
+            <node x="1752.5" y="423.0">model.scparametr.scelementtype.ScEdgeCommonType</node>
+            <node x="1371.0" y="260.0">model.scparametr.scelementtype.ScArcAccessTypeDecarator</node>
+            <node x="1639.0" y="80.0">model.scparametr.scelementtype.ScConnectorType</node>
           </nodes>
           <notes />
           <edges>
@@ -2005,224 +1966,146 @@
             </edge>
             <edge source="model.scparametr.scelementtype.ScVarConnectorType" target="model.scparametr.scelementtype.ScConnectorTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1715.0" y="340.0" />
-              <point x="1756.25" y="340.0" />
-              <point x="-44.75" y="15.0" />
+              <point x="1809.0" y="240.0" />
+              <point x="1837.75" y="240.0" />
+              <point x="44.75" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScArcCommonType" target="model.scparametr.scelementtype.ScConnectorType">
               <point x="0.0" y="-15.0" />
-              <point x="1981.0" y="240.0" />
-              <point x="1846.2075163398695" y="240.0" />
-              <point x="48.0" y="15.0" />
+              <point x="1613.0" y="140.0" />
+              <point x="1687.0" y="140.0" />
+              <point x="-16.0" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScVarNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1292.0" y="310.0" />
-              <point x="769.5555555555557" y="310.0" />
-              <point x="67.55555555555554" y="15.0" />
+              <point x="996.0000000000001" y="230.0" />
+              <point x="720.7777777777778" y="230.0" />
+              <point x="33.77777777777776" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScNoroleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="384.5000000000002" y="330.0" />
-              <point x="668.2222222222223" y="330.0" />
-              <point x="-33.777777777777786" y="15.0" />
+              <point x="546.5" y="210.0" />
+              <point x="619.4444444444446" y="210.0" />
+              <point x="-67.55555555555556" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScPosArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1295.0" y="420.0" />
-              <point x="1424.1000000000001" y="420.0" />
-              <point x="-35.39999999999999" y="15.0" />
+              <point x="1.4210854715202004E-14" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScFuzArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1.4210854715202004E-14" y="15.0" />
+              <point x="1295.0" y="320.0" />
+              <point x="1424.1000000000001" y="320.0" />
+              <point x="-35.39999999999999" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScNodeType" target="model.scparametr.scelementtype.ScElementType">
               <point x="0.0" y="-15.0" />
-              <point x="702.0000000000001" y="160.0" />
-              <point x="1670.6666666666667" y="160.0" />
+              <point x="687.0000000000001" y="55.0" />
+              <point x="1186.9166666666667" y="55.0" />
               <point x="-38.333333333333336" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScConstNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="230.0" y="320.0" />
-              <point x="651.3333333333335" y="320.0" />
-              <point x="-50.66666666666667" y="15.0" />
+              <point x="1285.0" y="210.0" />
+              <point x="754.5555555555557" y="210.0" />
+              <point x="67.55555555555554" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScTempArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1124.0" y="410.0" />
-              <point x="1388.7" y="410.0" />
+              <point x="1124.5" y="310.0" />
+              <point x="1388.7" y="310.0" />
               <point x="-70.8" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScMaterialNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="72.0" y="310.0" />
-              <point x="634.4444444444446" y="310.0" />
-              <point x="-67.55555555555556" y="15.0" />
+              <point x="845.0000000000001" y="240.0" />
+              <point x="703.8888888888889" y="240.0" />
+              <point x="16.88888888888887" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScNegArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1625.5" y="420.0" />
-              <point x="1494.9" y="420.0" />
+              <point x="1626.0" y="320.0" />
+              <point x="1494.9" y="320.0" />
               <point x="35.40000000000002" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.ScAddress" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="2091.5" y="60.0" />
-              <point x="1804.25" y="60.0" />
-              <point x="31.25" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScConstConnectorType" target="model.scparametr.scelementtype.ScConnectorTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1887.0" y="340.0" />
-              <point x="1845.75" y="340.0" />
-              <point x="44.75" y="15.0" />
+              <point x="1707.0" y="240.0" />
+              <point x="1748.25" y="240.0" />
+              <point x="-44.75" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScEdgeCommonType" target="model.scparametr.scelementtype.ScConnectorType">
               <point x="0.0" y="-15.0" />
-              <point x="1617.0" y="240.0" />
-              <point x="1782.2075163398695" y="240.0" />
-              <point x="-16.0" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.ScIdSubscription" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1313.5" y="50.0" />
-              <point x="1729.25" y="50.0" />
-              <point x="-43.75" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.SctpCodeReturn" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1967.5" y="70.0" />
-              <point x="1791.75" y="70.0" />
-              <point x="18.75" y="15.0" />
+              <point x="1819.0" y="126.0" />
+              <point x="1751.0" y="130.0" />
+              <point x="48.0" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScStructNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1003.0000000000001" y="330.0" />
-              <point x="735.7777777777778" y="330.0" />
-              <point x="33.77777777777776" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.scelementtype.ScElementType" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1709.0" y="80.0" />
-              <point x="1766.75" y="80.0" />
-              <point x="-6.25" y="15.0" />
+              <point x="-1.4210854715202004E-14" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScTupleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="851.5000000000001" y="340.0" />
-              <point x="718.888888888889" y="340.0" />
-              <point x="16.88888888888887" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.ScContentSize" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="2210.0" y="50.0" />
-              <point x="1816.75" y="50.0" />
-              <point x="43.75" y="15.0" />
+              <point x="535.5000000000001" y="240.0" />
+              <point x="670.1111111111112" y="240.0" />
+              <point x="-16.8888888888889" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScPermArcAccessType" target="model.scparametr.scelementtype.ScArcAccessTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1796.5" y="410.0" />
-              <point x="1530.3000000000002" y="410.0" />
+              <point x="1797.0" y="310.0" />
+              <point x="1530.3000000000002" y="310.0" />
               <point x="70.80000000000001" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.scelementtype.ScAbstractNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
-              <point x="0.0" y="-15.0" />
-              <point x="545.5000000000001" y="340.0" />
-              <point x="685.1111111111112" y="340.0" />
-              <point x="-16.8888888888889" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.scelementtype.ScClassNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
-              <point x="0.0" y="-15.0" />
-              <point x="-1.4210854715202004E-14" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScConnectorType" target="model.scparametr.scelementtype.ScElementType">
               <point x="0.0" y="-15.0" />
-              <point x="1798.2075163398695" y="160.0" />
-              <point x="1709.0" y="160.0" />
-              <point x="7.105427357601002E-15" y="15.0" />
+              <point x="1703.0" y="55.0" />
+              <point x="1263.5833333333335" y="55.0" />
+              <point x="38.33333333333334" y="15.0" />
+            </edge>
+            <edge source="model.scparametr.scelementtype.ScClassNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
+              <point x="0.0" y="-15.0" />
+              <point x="456.0000000000001" y="233.0" />
+              <point x="653.2222222222223" y="230.0" />
+              <point x="-33.777777777777786" y="15.0" />
+            </edge>
+            <edge source="model.scparametr.scelementtype.ScAbstractNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
+              <point x="0.0" y="-15.0" />
+              <point x="450.5" y="220.0" />
+              <point x="636.3333333333335" y="220.0" />
+              <point x="-50.66666666666667" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScArcAccessType" target="model.scparametr.scelementtype.ScConnectorType">
               <point x="0.0" y="-15.0" />
-              <point x="1459.5" y="230.0" />
-              <point x="1750.2075163398695" y="230.0" />
+              <point x="1459.5" y="130.0" />
+              <point x="1655.0" y="130.0" />
               <point x="-48.0" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.ScEventType" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1837.0" y="80.0" />
-              <point x="1779.25" y="80.0" />
-              <point x="6.25" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScRoleNodeType" target="model.scparametr.scelementtype.ScNodeTypeDecarator">
               <point x="0.0" y="-15.0" />
-              <point x="1151.0" y="320.0" />
-              <point x="752.6666666666667" y="320.0" />
+              <point x="1137.0" y="220.0" />
+              <point x="737.6666666666667" y="220.0" />
               <point x="50.66666666666664" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.SctpCommandType" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1464.5" y="60.0" />
-              <point x="1741.75" y="60.0" />
-              <point x="-31.25" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScConnectorTypeDecarator" target="model.scparametr.scelementtype.ScConnectorType">
               <point x="0.0" y="-15.0" />
-              <point x="1801.0" y="240.0" />
-              <point x="1814.2075163398695" y="240.0" />
+              <point x="1793.0" y="140.0" />
+              <point x="1719.0" y="140.0" />
               <point x="16.0" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.ScString" target="model.scparametr.ScParameter">
-              <point x="0.0" y="-15.0" />
-              <point x="1593.0" y="70.0" />
-              <point x="1754.25" y="70.0" />
-              <point x="-18.75" y="15.0" />
-            </edge>
-            <edge source="model.scparametr.scelementtype.ScLinkType" target="model.scparametr.scelementtype.ScElementType">
-              <point x="0.0" y="-15.0" />
-              <point x="1929.2075163398695" y="150.0" />
-              <point x="1747.3333333333335" y="150.0" />
-              <point x="38.33333333333334" y="15.0" />
             </edge>
             <edge source="model.scparametr.scelementtype.ScNodeTypeDecarator" target="model.scparametr.scelementtype.ScNodeType">
               <point x="0.0" y="-15.0" />
               <point x="0.0" y="15.0" />
             </edge>
+            <edge source="model.scparametr.scelementtype.ScLinkType" target="model.scparametr.scelementtype.ScElementType">
+              <point x="0.0" y="-15.0" />
+              <point x="7.105427357601002E-15" y="15.0" />
+            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="925.0" y="245.0" />
-          <SelectedNodes>
-            <node>model.scparametr.scelementtype.ScConnectorType</node>
-          </SelectedNodes>
+          <settings layout="Hierarchic Group" zoom="1.0" x="1574.5" y="-117.5" />
+          <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/ScElementTypeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1475">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/scparametr/ScAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
