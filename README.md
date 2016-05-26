@@ -5,7 +5,7 @@
 ```
 <repositories>
   <repository>
-    <id>tasks.SctpClient-mvn-repo</id>
+    <id>SctpClient-mvn-repo</id>
     <url>https://raw.github.com//Historicteam/tasks.SctpClient/mvn-repo/</url>
     <snapshots>
       <enabled>true</enabled>
@@ -17,7 +17,7 @@
   <dependency>
     <groupId>by.ostis.mihas</groupId>
     <artifactId>sctp-client</artifactId>
-    <version>0.1.4</version>
+    <version>1.0.0T</version>
   </dependency>
 </dependencies>
 ```
@@ -25,4 +25,4 @@
 ## Поддержка
 Если у вас возникли сложности или вопросы по использованию данной библиотеки,  напишите на электронную почту <natashkinsasha@gmail.com>.
 ## Документация
-Пользовательскую документацию можно получить по [ссылке](./docs/index.md).Документацию API можно получить из исходных кодов пакета или с помощью утилиты Doxygen.
+Пользовательскую документацию можно получить по [ссылке](https://drive.google.com/file/d/0Bw9b3yfujsCxNHBoQmdsZWxoLVU/view?usp=sharing).Документацию API можно получить из исходных кодов пакета или с помощью утилиты Doxygen.
