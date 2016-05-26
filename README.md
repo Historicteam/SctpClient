@@ -3,27 +3,17 @@
 ## Подключение
 Для добавления зависимости с помощью Maven надо добавить в pom.xml следующий текcт:
 ```
+
 <repositories>
   <repository>
     <id>SctpClient-mvn-repo</id>
-    <url>https://raw.github.com//Historicteam/tasks.SctpClient/mvn-repo/</url>
+    <url>https://raw.github.com//Historicteam/SctpClient/mvn-repo/</url>
     <snapshots>
       <enabled>true</enabled>
       <updatePolicy>always</updatePolicy>
     </snapshots>
   </repository>
 </repositories>
- </properties>
-  <repositories>
-    <repository>
-      <id>SctpClient-mvn-repo</id>
-      <url>https://raw.github.com//Historicteam/SctpClient/mvn-repo/</url>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
 <dependencies>
   <dependency>
     <groupId>by.ostis.mihas</groupId>
