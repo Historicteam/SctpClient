@@ -3,7 +3,6 @@
 ## Подключение
 Для добавления зависимости с помощью Maven надо добавить в pom.xml следующий текcт:
 ```
-
 <repositories>
   <repository>
     <id>SctpClient-mvn-repo</id>
