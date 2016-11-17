@@ -7,7 +7,7 @@ import java.nio.ByteOrder;
 
 public class ScAddress implements ScParameter<Integer> {
 
-    int address;
+    private int address;
 
     private final static int SIZE=4;
 
@@ -42,7 +42,6 @@ public class ScAddress implements ScParameter<Integer> {
 
 
     public byte[] getBytes() {
-
         ByteBuffer tempBuffer = ByteBuffer.allocate(SIZE);
         tempBuffer.order(ByteOrder.LITTLE_ENDIAN);
         tempBuffer.putInt(address);

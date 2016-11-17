@@ -28,7 +28,7 @@ public class AsyncSctpClientTest extends Assert {
 
     @DataPoints
     public static AsyncSctpClient[] getAsyncSctpClient() throws IOException {
-        return new AsyncSctpClient[]{new AsyncSctpClientImpl("192.168.50.155", 55770)};
+        return new AsyncSctpClient[]{new AsyncSctpClientImpl("192.168.50.155", 55770), new AdvancedSctpClient("192.168.50.155", 55770)};
     }
 
     @Theory
@@ -229,8 +229,5 @@ public class AsyncSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    @Theory
-    public void testExecute1(AsyncSctpClient client) throws Exception {
 
-    }
 }
