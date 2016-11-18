@@ -1,5 +1,7 @@
 package client;
 
+import exception.IllegalCommand;
+import exception.IllegalReturnCode;
 import model.scresponce.SctpResponse;
 import model.scresponce.builder.SctpResponceBytesBuilder;
 import model.stcprequest.SctpRequest;
@@ -18,7 +20,7 @@ public class ConsSctpClientImpl extends SctpClientHelper implements ConsSctpClie
     }
 
     @Override
-    public SctpResponse perform(SctpRequest stcpRequest) throws IOException {
+    public SctpResponse perform(SctpRequest stcpRequest) throws IOException, IllegalReturnCode, IllegalCommand {
         init();
         generateIdRequest(stcpRequest);
         SctpRequestSender sender = new SctpRequestSender(getOutputStream());

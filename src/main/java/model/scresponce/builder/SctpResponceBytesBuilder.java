@@ -1,5 +1,7 @@
 package model.scresponce.builder;
 
+import exception.IllegalCommand;
+import exception.IllegalReturnCode;
 import model.scparametr.SctpCodeReturn;
 import model.scparametr.SctpCommandType;
 import model.scresponce.SctpResponse;
@@ -9,11 +11,11 @@ import java.nio.ByteOrder;
 import java.util.Arrays;
 
 public class SctpResponceBytesBuilder {
-    public static SctpResponse build(byte[] byteResponce) {
+    public static SctpResponse build(byte[] byteResponce) throws IllegalCommand, IllegalReturnCode {
         return parse(byteResponce);
     }
 
-    private static SctpResponse parse(byte[] byteResponce) {
+    private static SctpResponse parse(byte[] byteResponce) throws IllegalCommand, IllegalReturnCode {
         ByteBuffer byteBuffer = ByteBuffer.wrap(byteResponce);
         byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
         SctpResponse sctpResponse = new SctpResponse();

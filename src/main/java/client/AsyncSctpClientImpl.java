@@ -1,5 +1,7 @@
 package client;
 
+import exception.IllegalCommand;
+import exception.IllegalReturnCode;
 import model.scparametr.SctpCodeReturn;
 import model.scresponce.SctpResponse;
 import model.scresponce.builder.SctpResponceBytesBuilder;
@@ -146,7 +148,14 @@ public class AsyncSctpClientImpl extends SctpClientHelper implements AsyncSctpCl
         }
 
         public void run() {
-            SctpResponse sctpResponse = SctpResponceBytesBuilder.build(byteSctpResponse);
+            SctpResponse sctpResponse = null;
+            try {
+                sctpResponse = SctpResponceBytesBuilder.build(byteSctpResponse);
+            } catch (IllegalCommand illegalCommand) {
+                illegalCommand.printStackTrace();
+            } catch (IllegalReturnCode illegalReturnCode) {
+                illegalReturnCode.printStackTrace();
+            }
             reduceRequests();
             CallBack callBack = callBackMap.get(sctpResponse.getId());
             if (callBack != null) {

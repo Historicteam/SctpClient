@@ -5,17 +5,14 @@ import model.scparametr.*;
 import model.scparametr.scelementtype.ScConnectorType;
 import model.scparametr.scelementtype.ScNodeType;
 
+import java.io.Closeable;
+import java.io.IOException;
 import java.time.Clock;
 import java.time.Duration;
 
-public interface Sender {
+public interface SctpSender extends AutoCloseable{
 
-    /**
-     * Конфигурирует
-     * @param host
-     * @param port
-     */
-    Sender configure(String host, Integer port);
+
 
     /**
      * Проверка существования элемента с указанным sc-адресом
@@ -137,13 +134,43 @@ public interface Sender {
      */
     FluentSctpResponce<Integer> get();
 
-    class Event {
+    void close() throws IOException;
+
+
+
+    public class Event {
         private ScIdSubscription scIdSubscription;
         private ScAddress scAddress;
         private ScAddress argScAddress;
+
+        public ScIdSubscription getScIdSubscription() {
+            return scIdSubscription;
+        }
+
+        public void setScIdSubscription(ScIdSubscription scIdSubscription) {
+            this.scIdSubscription = scIdSubscription;
+        }
+
+        public ScAddress getScAddress() {
+            return scAddress;
+        }
+
+        public void setScAddress(ScAddress scAddress) {
+            this.scAddress = scAddress;
+        }
+
+        public ScAddress getArgScAddress() {
+            return argScAddress;
+        }
+
+        public void setArgScAddress(ScAddress argScAddress) {
+            this.argScAddress = argScAddress;
+        }
+
+
     }
 
-    class EventTimeSignature {
+    public class EventTimeSignature {
         private Duration durationWork;
         private Integer scNodeNumber;
         private Integer scConnectorNumber;

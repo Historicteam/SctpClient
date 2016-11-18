@@ -18,7 +18,6 @@ public class SctpRequestSender {
     }
 
     public void sendRequest(SctpRequest request) throws IOException {
-
         byte[] data = SctpRequestBytesBuilder.build(request);
         StringBuilder dataStr = new StringBuilder();
         for (byte b : data) {
@@ -27,6 +26,5 @@ public class SctpRequestSender {
         LOG.info(dataStr);
         outputStream.write(data);
         outputStream.flush();
-
     }
 }

@@ -1,5 +1,7 @@
 package model.scresponce.builder;
 
+import exception.IllegalCommand;
+import exception.IllegalReturnCode;
 import model.scparametr.*;
 import model.scparametr.scelementtype.ScElementType;
 import model.scresponce.SctpResponse;
@@ -24,7 +26,7 @@ final class ResponseBodyBuilder {
     private ResponseBodyBuilder() {
     }
 
-    public List<ScParameter> build(final byte[] byteParametr, final SctpResponse sctpResponse) {
+    public List<ScParameter> build(final byte[] byteParametr, final SctpResponse sctpResponse) throws IllegalCommand, IllegalReturnCode {
         if (!checkReturnCode(sctpResponse)) {
             return Collections.EMPTY_LIST;
         } else {
@@ -33,7 +35,7 @@ final class ResponseBodyBuilder {
     }
 
 
-    private boolean checkReturnCode(SctpResponse sctpResponse) {
+    private boolean checkReturnCode(SctpResponse sctpResponse) throws IllegalReturnCode {
         switch (sctpResponse.getSctpCodeReturn()) {
             case SUCCESSFUL:
                 return true;
@@ -44,12 +46,12 @@ final class ResponseBodyBuilder {
             case PERMISSION_DENIED:
                 return false;
             default:
-                throw new IllegalArgumentException("Not support answer= " + sctpResponse.getSctpCodeReturn());
+                throw new IllegalReturnCode("Not support answer= " + sctpResponse.getSctpCodeReturn());
         }
     }
 
 
-    private List<ScParameter> create(byte[] byteParametrs, SctpResponse sctpResponse) {
+    private List<ScParameter> create(byte[] byteParametrs, SctpResponse sctpResponse) throws IllegalCommand {
         ByteBuffer byteBuffer = ByteBuffer.wrap(byteParametrs);
         byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
         switch (sctpResponse.getSctpCommandType()) {
@@ -58,6 +60,8 @@ final class ResponseBodyBuilder {
             case GET_ELEMENT_TYPE_COMMAND:
                 return new ElementTypeBuilder().build(byteBuffer);
             case DELETE_ELEMENT_COMMAND:
+                return Collections.EMPTY_LIST;
+            case CREATE_CONSTRUCTION:
                 return Collections.EMPTY_LIST;
             case CREATE_NODE_COMMAND:
                 return new CreateNodeBuilder().build(byteBuffer);
@@ -89,14 +93,12 @@ final class ResponseBodyBuilder {
                 return Collections.EMPTY_LIST;
             case SHUTDOWN_COMMAND:
                 return Collections.EMPTY_LIST;
-            case CREATE_CONSTRUCTION:
-                return Collections.EMPTY_LIST;
             case GET_EVENT_COMMAND:
                 return new EventCommandBuilder().build(byteBuffer);
             case ITERATE_CONSTRUCTION_COMMAND:
                 return Collections.EMPTY_LIST;
             default:
-                throw new IllegalArgumentException("Not support command= " + sctpResponse.getSctpCommandType());
+                throw new IllegalCommand("Not support command= " + sctpResponse.getSctpCommandType());
         }
 
     }
