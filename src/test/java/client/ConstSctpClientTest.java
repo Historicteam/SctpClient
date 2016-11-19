@@ -1,5 +1,7 @@
 package client;
 
+import exception.IllegalCommand;
+import exception.IllegalReturnCode;
 import model.scparametr.*;
 import model.scparametr.scelementtype.ScArcAccessType;
 import model.scparametr.scelementtype.ScConnectorType;
@@ -27,11 +29,11 @@ public class ConstSctpClientTest extends Assert {
 
     @DataPoints
     public static ConsSctpClient[] getConsSctpClient() throws IOException {
-        return new ConsSctpClient[]{new ConsSctpClientImpl("192.168.50.155", 55770), new AdvancedSctpClient("192.168.50.155", 55770)};
+        return new ConsSctpClient[]{new ConsSctpClientImpl("192.168.20.128", 55770), new AdvancedSctpClient("192.168.20.128", 55770)};
     }
 
     @Theory
-    public void testPerform(ConsSctpClient client) throws IOException {
+    public void testPerform(ConsSctpClient client) throws IOException, IllegalReturnCode, IllegalCommand {
         LOG.info("---------Start test testPerform--------------");
         this.client = client;
         SctpResponse sctpResponseCreateElement = testCreateElement(new ScMaterialNodeType(new ScNodeType
@@ -69,7 +71,7 @@ public class ConstSctpClientTest extends Assert {
 
     }
 
-    public SctpResponse testCreateElement(ScNodeType scNodeType) throws IOException {
+    public SctpResponse testCreateElement(ScNodeType scNodeType) throws IOException, IllegalCommand, IllegalReturnCode {
         CreateNodeSctpRequest createNodeSctpRequest = new CreateNodeSctpRequest(scNodeType);
         LOG.info(createNodeSctpRequest);
         SctpResponse sctpResponse = client.perform(createNodeSctpRequest);
@@ -83,7 +85,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testCheckElement(ScAddress scAddress) throws IOException {
+    public SctpResponse testCheckElement(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest checkElementExistenceSctpRequest = new CheckElementExistenceSctpRequest(scAddress);
         LOG.info(checkElementExistenceSctpRequest);
         SctpResponse sctpResponse = client.perform(checkElementExistenceSctpRequest);
@@ -93,7 +95,7 @@ public class ConstSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    public SctpResponse testGetTypeElement(ScAddress scAddress) throws IOException {
+    public SctpResponse testGetTypeElement(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getElementTypeStcpRequest = new GetElementTypeStcpRequest(scAddress);
         LOG.info(getElementTypeStcpRequest);
         SctpResponse sctpResponse = client.perform(getElementTypeStcpRequest);
@@ -103,7 +105,7 @@ public class ConstSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    public SctpResponse testSetIdentifier(ScAddress scAddress, ScString scString) throws IOException {
+    public SctpResponse testSetIdentifier(ScAddress scAddress, ScString scString) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest setIdentifierSctpRequest = new SetIdentifierSctpRequest(scAddress, scString);
         LOG.info(setIdentifierSctpRequest);
         SctpResponse sctpResponse = client.perform(setIdentifierSctpRequest);
@@ -112,7 +114,7 @@ public class ConstSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    public SctpResponse testGetElementById(ScString scString) throws IOException {
+    public SctpResponse testGetElementById(ScString scString) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getElementByIdSctpRequest = new GetElementByIdSctpRequest(scString);
         LOG.info(getElementByIdSctpRequest);
         SctpResponse sctpResponse = client.perform(getElementByIdSctpRequest);
@@ -123,7 +125,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testCreateLink() throws IOException {
+    public SctpResponse testCreateLink() throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest createLinkSctpReques = new CreateLinkSctpRequest();
         LOG.info(createLinkSctpReques);
         SctpResponse sctpResponse = client.perform(createLinkSctpReques);
@@ -134,7 +136,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testSetLinkContent(ScAddress scAddress, ScString scString) throws IOException {
+    public SctpResponse testSetLinkContent(ScAddress scAddress, ScString scString) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest setLinkContentSctpRequest = new SetLinkContentSctpRequest(scAddress
                 , scString);
         LOG.info(setLinkContentSctpRequest);
@@ -146,7 +148,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testGetLinkContent(ScAddress scAddress) throws IOException {
+    public SctpResponse testGetLinkContent(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getLinkContentSctpRequest = new GetLinkContentSctpRequest(scAddress);
         LOG.info(getLinkContentSctpRequest);
         SctpResponse sctpResponse = client.perform(getLinkContentSctpRequest);
@@ -157,7 +159,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testGetLinksByContent(ScString scString) throws IOException {
+    public SctpResponse testGetLinksByContent(ScString scString) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getLinksByContentSctpRequest = new GetLinksByContentSctpRequest(scString);
         LOG.info(getLinksByContentSctpRequest);
         SctpResponse sctpResponse = client.perform(getLinksByContentSctpRequest);
@@ -169,7 +171,7 @@ public class ConstSctpClientTest extends Assert {
 
 
     public SctpResponse testCreateArc(ScAddress scAddressFirstElememt, ScAddress scAddressSecondElement,
-                                      ScConnectorType scConnectorType) throws IOException {
+                                      ScConnectorType scConnectorType) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest createArcSctpRequest = new CreateArcSctpRequest(scConnectorType, scAddressFirstElememt,
                 scAddressSecondElement);
         LOG.info(createArcSctpRequest);
@@ -181,7 +183,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testGetArcElements(ScAddress scAddress) throws IOException {
+    public SctpResponse testGetArcElements(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getArcElementsSctpRequest = new GetArcVertexesSctpRequest(scAddress);
         LOG.info(getArcElementsSctpRequest);
         SctpResponse sctpResponse = client.perform(getArcElementsSctpRequest);
@@ -191,7 +193,7 @@ public class ConstSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    public SctpResponse testMakeSubscription(ScAddress scAddress) throws IOException {
+    public SctpResponse testMakeSubscription(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest makeSubscriptionSctpRequest = new MakeSubscriptionSctpRequest(ScEventType
                 .SC_EVENT_REMOVE_ELEMENT, scAddress);
         LOG.info(makeSubscriptionSctpRequest);
@@ -203,7 +205,7 @@ public class ConstSctpClientTest extends Assert {
 
     }
 
-    public SctpResponse testDeleteElement(ScAddress scAddress) throws IOException {
+    public SctpResponse testDeleteElement(ScAddress scAddress) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest deleteElementSctpRequest = new DeleteElementSctpRequest(scAddress);
         LOG.info(deleteElementSctpRequest);
         SctpResponse sctpResponse = client.perform(deleteElementSctpRequest);
@@ -214,7 +216,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
 
-    public SctpResponse testGetEvent() throws IOException {
+    public SctpResponse testGetEvent() throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest getEventSctpRequest = new GetEventSctpRequest();
         LOG.info(getEventSctpRequest);
         SctpResponse sctpResponse = client.perform(getEventSctpRequest);
@@ -224,7 +226,7 @@ public class ConstSctpClientTest extends Assert {
         return sctpResponse;
     }
 
-    public SctpResponse testDeleteSubscription(ScIdSubscription scIdSubscription) throws IOException {
+    public SctpResponse testDeleteSubscription(ScIdSubscription scIdSubscription) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest deleteSubscriptionRequest = new DeleteSubscriptionSctpRequest(scIdSubscription);
         LOG.info(deleteSubscriptionRequest);
         SctpResponse sctpResponse = client.perform(deleteSubscriptionRequest);
@@ -235,7 +237,7 @@ public class ConstSctpClientTest extends Assert {
     }
 
     public SctpResponse testFindConstruction5f_a_a_a_f(ScAddress scAddressFirstElement, ScConnectorType
-            scConnectorType, ScAddress scAddressSecond) throws IOException {
+            scConnectorType, ScAddress scAddressSecond) throws IOException, IllegalCommand, IllegalReturnCode {
         SctpRequest findConstruction5f_a_fSctpRequest = new FindConstruction3f_a_fSctpRequest(scAddressFirstElement,
                 scConnectorType, scAddressSecond);
         LOG.info(findConstruction5f_a_fSctpRequest);

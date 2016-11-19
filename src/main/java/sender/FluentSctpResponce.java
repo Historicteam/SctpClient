@@ -1,6 +1,7 @@
 package sender;
 
 
+import exception.IllegalReturnCode;
 import model.scparametr.SctpCodeReturn;
 import model.scresponce.SctpResponse;
 
@@ -17,7 +18,7 @@ public interface FluentSctpResponce<F> {
 
     FluentSctpResponce<F> exception(CommandaWithParametr<Exception> commanda);
 
-    SctpResponse getResponce();
+    F get();
 
-    F getResult();
+    SctpResponse getResponce();
 }
