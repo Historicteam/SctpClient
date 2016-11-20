@@ -3,10 +3,10 @@
   <groupId>by.ostis.mihas</groupId>
   <artifactId>sctp-client</artifactId>
   <versioning>
-    <release>2-beta</release>
+    <release>2.1-beta</release>
     <versions>
-      <version>2-beta</version>
+      <version>2.1-beta</version>
     </versions>
-    <lastUpdated>20161120195716</lastUpdated>
+    <lastUpdated>20161120224939</lastUpdated>
   </versioning>
 </metadata>
