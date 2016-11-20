@@ -1,12 +1,11 @@
 package new_client;
 
 
-import sender.AlphaSender;
-import sender.BetaSender;
+import exception.SctpException;
+import sender.AsyncSender;
+import sender.SyncSender;
 import sender.SctpSender;
-import com.google.common.io.Closer;
 
-import java.io.IOException;
 import java.util.List;
 
 public class SctpSenderCreater implements AutoCloseable{
@@ -20,14 +19,14 @@ public class SctpSenderCreater implements AutoCloseable{
     }
 
     public static SctpSender createAsyncSender(String host, Integer port) {
-        return new AlphaSender(host, port);
+        return new AsyncSender(host, port);
     }
 
     public static SctpSender createSender(String host, Integer port) {
-        return new BetaSender(host, port);
+        return new SyncSender(host, port);
     }
 
-    public void close() throws IOException {
+    public void close() throws SctpException {
         for (SctpSender sender:senders){
             sender.close();
         }

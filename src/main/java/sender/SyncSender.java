@@ -1,8 +1,7 @@
 package sender;
 
 
-import exception.IllegalCommand;
-import exception.IllegalReturnCode;
+import exception.SctpException;
 import model.scparametr.*;
 import model.scparametr.scelementtype.*;
 import model.scresponce.SctpResponse;
@@ -13,10 +12,10 @@ import model.stcprequest.FindConstructionSctpRequest.*;
 import java.io.IOException;
 import java.time.Clock;
 
-public class BetaSender extends AbstractSender {
+public class SyncSender extends AbstractSender {
 
 
-    public BetaSender(String host, Integer port) {
+    public SyncSender(String host, Integer port) {
         super(host, port);
     }
 
@@ -193,10 +192,7 @@ public class BetaSender extends AbstractSender {
         return find(scAddressFirstElement, scFirstConnector.get(), scAddressThirdElement, scSecondConnector.get(), scFifthElement.get());
     }
 
-    @Override
-    public FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnector, ScAddress scAddressThirdElement, ScConnectorType scSecondConnector, ScAddress scAddressFifthElement) {
-        return new ExecuteHandler<Quintuple[]>().execute(new FindConstruction5_f_a_f_a_fSctpRequest(scAddressFirstElement, scFirstConnector, scAddressThirdElement, scSecondConnector, scAddressFifthElement));
-    }
+
 
     @Override
     public FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnector scFirstConnector, ScAddress scAddressThirdElement, ScConnector scSecondConnector, ScAddress scAddressFifthElement) {
@@ -214,10 +210,15 @@ public class BetaSender extends AbstractSender {
         return find(scAddressFirstElement, scSecondConnector.get(), scThirdElement.get(), scSecondConnector.get(), scAddressFifthElement);
     }
 
+    @Override
+    public FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnector, ScAddress scAddressThirdElement, ScConnectorType scSecondConnector, ScAddress scAddressFifthElement) {
+        return new ExecuteHandler<Quintuple[]>().execute(new FindConstruction5_f_a_f_a_fSctpRequest(scAddressFirstElement, scFirstConnector, scAddressThirdElement, scSecondConnector, scAddressFifthElement));
+    }
+
 
     class ExecuteHandler<T> {
         public FluentSctpResponce<T> execute(SctpRequest request) {
-            return (new FluentSctpResponceImpl<T>(send(request))).setException(getException());
+            return (new SyncFluentSctpResponce<T>(send(request))).setException(getException());
         }
     }
 
@@ -227,7 +228,7 @@ public class BetaSender extends AbstractSender {
         try {
             getSender().sendRequest(request);
             response = SctpResponceBytesBuilder.build(getReader().read());
-        } catch (IOException | IllegalCommand | IllegalReturnCode e) {
+        } catch (IOException | SctpException e) {
             e.printStackTrace();
             setException(e);
         }

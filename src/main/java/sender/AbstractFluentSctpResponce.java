@@ -2,7 +2,6 @@ package sender;
 
 
 import com.google.common.collect.Lists;
-import exception.IllegalReturnCode;
 import model.scparametr.ScAddress;
 import model.scparametr.ScIdSubscription;
 import model.scparametr.ScParameter;
@@ -45,30 +44,34 @@ public abstract class AbstractFluentSctpResponce<T> implements FluentSctpResponc
             case DELETE_SUBSCRIPTION_COMMAND:
                 return (T) parameters.get(0);
             case FIND_CONSTRUCTIONS_COMMAND:
-                if (parameters.size() % 3==0){
+                List<ScParameter> parametrsCopy = parameters.subList(1, parameters.size());
+                if (parametrsCopy.size() % 3==0){
                     List<SctpSender.Triple> scAddress = new ArrayList<>();
-                    List<List<ScParameter>> partitionParametrs = Lists.partition(parameters, 3);
+                    List<List<ScParameter>> partitionParametrs = Lists.partition(parametrsCopy, 3);
                     partitionParametrs.stream().forEach(element->{
                         scAddress.add(new SctpSender.Triple((ScAddress) element.get(0), (ScAddress)element.get(1),(ScAddress) element.get(2)));
                     });
-                    return (T) scAddress.toArray();
+                    return (T) scAddress.toArray(new SctpSender.Triple[scAddress.size()]);
                 } else {
                     List<SctpSender.Quintuple> scAddress = new ArrayList<>();
-                    List<List<ScParameter>> partitionParametrs = Lists.partition(parameters, 5);
+                    List<List<ScParameter>> partitionParametrs = Lists.partition(parametrsCopy, 5);
                     partitionParametrs.stream().forEach(element->{
                         scAddress.add(new SctpSender.Quintuple((ScAddress) element.get(0), (ScAddress)element.get(1),(ScAddress) element.get(2),(ScAddress) element.get(3),(ScAddress) element.get(4)));
                     });
-                    return (T) scAddress.toArray();
+                    return (T) scAddress.toArray(new SctpSender.Quintuple[scAddress.size()]);
                 }
             case FIND_ELEMENT_BY_SYSIDTF_COMMAND:
                 return (T) parameters.get(0);
             case FIND_LINKS_COMMAND:
-                return (T) parameters.get(0);
+                List<ScAddress> scAddresses = new ArrayList<>();
+                List<ScParameter> parametersCopy = parameters.subList(1, parameters.size());
+                parametersCopy.stream().forEach((element)->{scAddresses.add((ScAddress) element);});
+                return (T) scAddresses.toArray(new ScAddress[scAddresses.size()]);
             case GET_ARC_VERTEXES_COMMAND:
                 List<ScAddress> scAddress = new ArrayList<>();
                 scAddress.add((ScAddress) parameters.get(0));
                 scAddress.add((ScAddress) parameters.get(1));
-                return (T) scAddress.toArray();
+                return (T) scAddress.toArray(new ScAddress[scAddress.size()]);
             case GET_ELEMENT_TYPE_COMMAND:
                 return (T) parameters.get(0);
             case GET_EVENT_COMMAND:
@@ -82,7 +85,7 @@ public abstract class AbstractFluentSctpResponce<T> implements FluentSctpResponc
                     event.setArgScAddress((ScAddress) element.get(2));
                     events.add(event);
                 });
-                return (T) events.toArray();
+                return (T) events.toArray(new SctpSender.Event[events.size()]);
             case GET_LINK_CONTENT_COMMAND:
                 return (T) parameters.get(0);
             case ITERATE_CONSTRUCTION_COMMAND:

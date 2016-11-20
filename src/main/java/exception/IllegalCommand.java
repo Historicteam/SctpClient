@@ -1,7 +1,7 @@
 package exception;
 
 
-public class IllegalCommand extends Exception{
+public class IllegalCommand extends SctpException{
     public IllegalCommand(String s){
         super(s);
     }

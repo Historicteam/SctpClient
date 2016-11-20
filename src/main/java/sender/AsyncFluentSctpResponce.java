@@ -1,29 +1,34 @@
 package sender;
 
 
+import exception.SctpException;
 import model.scparametr.SctpCodeReturn;
 import model.scresponce.SctpResponse;
 
+import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 
-public class AsyncFluentSctpResponceImpl<T> extends AbstractFluentSctpResponce<T> {
+public class AsyncFluentSctpResponce<T> extends AbstractFluentSctpResponce<T> {
     private ScheduledExecutorService scheduledExecutorService;
-    private Future<SctpResponse> response;
+    private Future<SctpResponse> futureResponse;
 
     public void setFutureResponce(Future<SctpResponse> response) {
-        this.response = response;
+        this.futureResponse = response;
     }
+
 
     public Future<SctpResponse> getFutureResponce() {
-        return response;
+        return futureResponse;
     }
 
-    protected AsyncFluentSctpResponceImpl(Future<SctpResponse> response) {
-        this.response = response;
-        this.scheduledExecutorService = Executors.newScheduledThreadPool(3);
+
+
+    protected AsyncFluentSctpResponce(Future<SctpResponse> futureResponse) {
+        this.futureResponse = futureResponse;
+        this.scheduledExecutorService = Executors.newScheduledThreadPool(1);
     }
 
 
@@ -167,24 +172,44 @@ public class AsyncFluentSctpResponceImpl<T> extends AbstractFluentSctpResponce<T
 
 
     @Override
-    public T get() {
+    public Optional<T> getOptinal() {
         try {
-            return buildResponce(getFutureResponce().get());
-        } catch (InterruptedException | ExecutionException e) {
+            if ((getException() == null) && (getResponce().getSctpCodeReturn() == SctpCodeReturn.SUCCESSFUL)) {
+                return Optional.ofNullable(buildResponce(getFutureResponce().get()));
+            }
+        } catch (InterruptedException | ExecutionException | SctpException e) {
             e.printStackTrace();
             setException(e);
         }
-        return null;
+        return Optional.empty();
     }
 
     @Override
-    public SctpResponse getResponce() {
+    public T get() throws SctpException {
         try {
-            return getFutureResponce().get();
+            if ((getException() == null) && (getResponce().getSctpCodeReturn() == SctpCodeReturn.SUCCESSFUL)) {
+                return buildResponce(getFutureResponce().get());
+            }
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
             setException(e);
         }
-        return null;
+        throw new SctpException(getException());
+    }
+
+
+    @Override
+    public SctpResponse getResponce() throws SctpException {
+        SctpResponse response =null;
+        try {
+            response = getFutureResponce().get();
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+            setException(e);
+        }
+        if (response!=null){
+            return response;
+        }
+        throw new SctpException(getException());
     }
 }

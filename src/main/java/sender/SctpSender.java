@@ -1,6 +1,7 @@
 package sender;
 
 
+import exception.SctpException;
 import model.scparametr.*;
 import model.scparametr.scelementtype.*;
 
@@ -174,39 +175,27 @@ public interface SctpSender extends AutoCloseable {
 
     FluentSctpResponce<Quintuple[]> find(ScElement scFirstElement, ScConnector scFirstConnector, ScAddress scAddressThirdElement, ScConnector scSecondConnector, ScElement scFifthElement);
 
-
-
     FluentSctpResponce<Quintuple[]> find(ScElementType scFirstElementType, ScConnectorType scFirstConnectorType, ScAddress scAddressThirdElement, ScConnectorType scSecondConnectorType, ScAddress scAddressFifthElement);
 
     FluentSctpResponce<Quintuple[]> find(ScElement scFirstElement, ScConnector scFirstConnector, ScAddress scAddressThirdElement, ScConnector scSecondConnector, ScAddress scAddressFifthElement);
-
-
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnectorType, ScElementType scThirdElementType, ScConnectorType scSecondConnectorType, ScElementType scFifthElementType);
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnector scFirstConnector, ScElement scThirdElement, ScConnector scSecondConnector, ScElement scFifthElement);
 
-
-
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnectorType, ScAddress scAddressThirdElement, ScConnectorType scSecondConnectorType, ScElementType scFifthElementType);
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnector scFirstConnector, ScAddress scAddressThirdElement, ScConnector scSecondConnector, ScElement scFifthElement);
-
-
-
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnector, ScAddress scAddressThirdElement, ScConnectorType scSecondConnector, ScAddress scAddressFifthElement);
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnector scFirstConnector, ScAddress scAddressThirdElement, ScConnector scSecondConnector, ScAddress scAddressFifthElement);
 
-
-
-
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnectorType scFirstConnectorType, ScElementType scThirdElementType, ScConnectorType scSecondConnectorType, ScAddress scAddressFifthElement);
 
     FluentSctpResponce<Quintuple[]> find(ScAddress scAddressFirstElement, ScConnector scFirstConnector, ScElement scThirdElement, ScConnector scSecondConnector, ScAddress scAddressFifthElement);
 
-    void close() throws IOException;
+    void close() throws SctpException;
 
 
     public class Triple {
@@ -230,6 +219,15 @@ public interface SctpSender extends AutoCloseable {
 
         public ScAddress getThirdAddress() {
             return thirdAddress;
+        }
+
+        @Override
+        public String toString() {
+            return "Triple{" +
+                    "firstAddress=" + firstAddress +
+                    ", secondAddress=" + secondAddress +
+                    ", thirdAddress=" + thirdAddress +
+                    '}';
         }
     }
 

@@ -1,7 +1,7 @@
 package exception;
 
 
-public class IllegalReturnCode extends Exception{
+public class IllegalReturnCode extends SctpException{
 
     public IllegalReturnCode(String s){
         super(s);

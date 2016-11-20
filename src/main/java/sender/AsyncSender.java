@@ -1,8 +1,7 @@
 package sender;
 
 
-import exception.IllegalCommand;
-import exception.IllegalReturnCode;
+import exception.SctpException;
 import model.scparametr.*;
 import model.scparametr.scelementtype.*;
 import model.scresponce.SctpResponse;
@@ -15,14 +14,14 @@ import java.time.Clock;
 import java.util.Map;
 import java.util.concurrent.*;
 
-public class AlphaSender extends AbstractSender {
+public class AsyncSender extends AbstractSender {
 
     private static int ID_GENERATE = Integer.MIN_VALUE;
     private Map<Integer, Triple<SctpRequest,Future<SctpResponse>,Exchanger<SctpResponse>>> tuples;
     private static final Semaphore SEMAPHORE = new Semaphore(1, true);
     private ScheduledExecutorService scheduledExecutorService;
 
-    public AlphaSender(String host, Integer port) {
+    public AsyncSender(String host, Integer port) {
         super(host, port);
         this.scheduledExecutorService = Executors.newScheduledThreadPool(1);
     }
@@ -223,7 +222,7 @@ public class AlphaSender extends AbstractSender {
 
     class ExecuteHandler<T> {
         public FluentSctpResponce<T> execute(SctpRequest request) {
-            return (new AsyncFluentSctpResponceImpl<T>(send(request))).setException(getException());
+            return (new AsyncFluentSctpResponce<T>(send(request))).setException(getException());
         }
     }
 
@@ -257,7 +256,7 @@ public class AlphaSender extends AbstractSender {
             SctpResponse responce = null;
             try {
                 responce = SctpResponceBytesBuilder.build(getReader().read());
-            } catch (IOException | IllegalReturnCode | IllegalCommand e) {
+            } catch (IOException | SctpException e) {
                 setException(e);
                 e.printStackTrace();
             }
@@ -273,11 +272,12 @@ public class AlphaSender extends AbstractSender {
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() throws SctpException {
         try {
             SEMAPHORE.acquire(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
+            setException(e);
         }
         super.close();
         SEMAPHORE.release();

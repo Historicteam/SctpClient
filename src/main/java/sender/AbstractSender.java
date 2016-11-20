@@ -1,17 +1,12 @@
 package sender;
 
 
-import model.scparametr.*;
-import model.scparametr.scelementtype.ScConnectorType;
-import model.scparametr.scelementtype.ScNodeType;
-import model.scresponce.SctpResponse;
-import model.stcprequest.*;
+import exception.SctpException;
 import transport.SctpRequestSender;
 import transport.SctpResponseReader;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.time.Clock;
 
 public abstract class AbstractSender implements SctpSender {
     private Socket socket;
@@ -38,13 +33,14 @@ public abstract class AbstractSender implements SctpSender {
 
 
     protected void setException(Exception exception) {
-        this.exception = exception;
+        if (exception != null) {
+            this.exception = exception;
+        }
     }
 
     protected Exception getException() {
         return exception;
     }
-
 
 
     synchronized private Socket init(String host, Integer port) throws IOException {
@@ -58,8 +54,13 @@ public abstract class AbstractSender implements SctpSender {
 
 
     @Override
-    public void close() throws IOException {
-        socket.close();
+    public void close() throws SctpException {
+        try {
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new SctpException(e);
+        }
     }
 
     @Override

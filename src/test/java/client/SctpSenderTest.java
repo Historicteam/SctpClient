@@ -1,6 +1,7 @@
 package client;
 
 
+import exception.SctpException;
 import model.scparametr.ScAddress;
 import model.scparametr.ScString;
 import model.scparametr.scelementtype.ScConnector;
@@ -10,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
@@ -31,7 +33,7 @@ public class SctpSenderTest {
     }
 
     @After
-    public void close() throws IOException {
+    public void close() throws SctpException {
         LOG.info(sctpSender);
         sctpSender.close();
     }
@@ -60,7 +62,7 @@ public class SctpSenderTest {
     @Theory
     public void testCreateConnector(SctpSender sctpSender) {
         this.sctpSender = sctpSender;
-        sctpSender.create(ScConnector.ARC_ACCESS_FUZ_PERM_VAR, sctpSender.create(ScNode.CLASS_CONST).get(), sctpSender.create(ScNode.CLASS_CONST).get()).success((address) -> {
+        sctpSender.create(ScConnector.ARC_ACCESS_FUZ_PERM_VAR, sctpSender.create(ScNode.CLASS_CONST).getOptinal().get(), sctpSender.create(ScNode.CLASS_CONST).getOptinal().get()).success((address) -> {
             LOG.info(address);
         });
 
@@ -69,7 +71,7 @@ public class SctpSenderTest {
     @Theory
     public void testCheck(SctpSender sctpSender) {
         this.sctpSender = sctpSender;
-        ScAddress scAddress = sctpSender.create().get();
+        ScAddress scAddress = sctpSender.create().getOptinal().get();
         sctpSender.check(scAddress).success(code -> {
             LOG.info(code);
         });
@@ -79,7 +81,7 @@ public class SctpSenderTest {
     @Theory
     public void testType(SctpSender sctpSender) {
         this.sctpSender = sctpSender;
-        ScAddress scAddress = sctpSender.create(ScNode.MATERIAL_VAR).get();
+        ScAddress scAddress = sctpSender.create(ScNode.MATERIAL_VAR).getOptinal().get();
         sctpSender.type(scAddress).success(type -> {
             LOG.info(type);
             Assert.assertEquals(ScNode.MATERIAL_VAR.get().get(), type.get());
@@ -87,15 +89,14 @@ public class SctpSenderTest {
     }
 
 
-
     @Theory
     public void testDelete(SctpSender sctpSender) {
         this.sctpSender = sctpSender;
-        ScAddress scAddress = sctpSender.create(ScNode.MATERIAL_VAR).get();
+        ScAddress scAddress = sctpSender.create(ScNode.MATERIAL_VAR).getOptinal().get();
         sctpSender.delete(scAddress).success(codeReturn -> {
             LOG.info(codeReturn);
         });
-        sctpSender.check(scAddress).unsuccess(()->{
+        sctpSender.check(scAddress).unsuccess(() -> {
             LOG.info("Элемент не найден");
         });
     }
@@ -103,9 +104,52 @@ public class SctpSenderTest {
     @Theory
     public void testContentAndLink(SctpSender sctpSender) {
         this.sctpSender = sctpSender;
-        ScAddress scAddress = sctpSender.create().get();
-        sctpSender.link(scAddress, new ScString("OSTIS")).success(codeReturn -> {LOG.info(codeReturn);});
+        ScAddress scAddress = sctpSender.create().getOptinal().get();
+        sctpSender.link(scAddress, new ScString("OSTIS")).success(codeReturn -> {
+            LOG.info(codeReturn);
+        });
         sctpSender.content(scAddress).success(scString -> LOG.info(scString));
+    }
+
+    @Theory
+    public void testSerch(SctpSender sctpSender) {
+        this.sctpSender = sctpSender;
+        sctpSender.serch(new ScString("OSTIS")).success(scAddresses -> {
+            LOG.info(scAddresses);
+        });
+    }
+
+    @Theory
+    public void testFind(SctpSender sctpSender) {
+        this.sctpSender = sctpSender;
+        ScAddress firstScAddress = sctpSender.create(ScNode.CLASS_CONST).success(scAddress -> {
+            LOG.info(scAddress);
+        }).getOptinal().get();
+        ScAddress secondScAddress = sctpSender.create(ScNode.CLASS_CONST).success(scAddress -> {
+            LOG.info(scAddress);
+        }).getOptinal().get();
+        ScAddress thirdScAddress = sctpSender.create(ScConnector.ARC_ACCESS_FUZ_PERM_VAR, firstScAddress, secondScAddress).success(scAddress -> {
+            LOG.info(scAddress);
+        }).getOptinal().get();
+        sctpSender.find(firstScAddress, ScConnector.ARC_ACCESS_FUZ_PERM_VAR, ScNode.CLASS_CONST).success(answer -> {
+            LOG.info(answer);
+        }).getOptinal();
+    }
+
+    @Theory
+    @Test(expected = SctpException.class)
+    public void testClose(SctpSender sctpSender) throws SctpException {
+        this.sctpSender = sctpSender;
+        try {
+            sctpSender.close();
+        } catch (SctpException e) {
+            e.printStackTrace();
+        }
+        sctpSender.create(ScNode.CLASS_CONST).success(scAddress -> {
+            LOG.info(scAddress);
+        }).exception(exception -> {
+            LOG.info(exception);
+        }).get();
     }
 
 
